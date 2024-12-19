@@ -1,7 +1,9 @@
 .selection-container {
   display: flex;
   flex-direction: column;
-  padding: 42px;
+  /* padding: 42px; */
+  padding-top: 10px;
+  padding-left: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   margin: 2px auto;
@@ -9,6 +11,7 @@
 
 .adresse {
   margin-bottom: 15px;
+  bottom: 20px;
 }
 
 .adresse h2 {
@@ -36,10 +39,12 @@
   display: flex;
   width: 40rem;
   align-items: center;
+  padding-bottom: 80px;
 }
 
 .voiture {
   position: relative;
+  right: 35px;
 }
 
 .voiture img {
@@ -49,7 +54,6 @@
 .distance,
 .disponibilite,
 .temps {
-  align-items: center;
   padding-bottom: 10px;
-  padding-left: 40px;
+  padding-left: 20px;
 }
