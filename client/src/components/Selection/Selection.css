@@ -1,12 +1,11 @@
 .selection-container {
   display: flex;
   flex-direction: column;
-  /* padding: 42px; */
   padding-top: 10px;
   padding-left: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
-  margin: 2px auto;
+  /* margin: 2px auto; */
 }
 
 .adresse {
@@ -39,6 +38,7 @@
   display: flex;
   width: 40rem;
   align-items: center;
+  padding-top: 15px;
   padding-bottom: 80px;
 }
 
