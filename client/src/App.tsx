@@ -1,7 +1,7 @@
 import "./App.css";
 import Bandeau from "./components/Bandeau/Bandeau";
 import Footer from "./components/Footer/Footer";
-import Maps from "./components/Map/Map";
+import DisplayMap from "./components/Map/DisplayMap";
 import Nav from "./components/Nav/Nav";
 import Selection from "./components/Selection/Selection";
 
@@ -11,8 +11,9 @@ function App() {
       <nav>
         <Nav />
       </nav>
+      
       <main>
-        <Maps />
+        <DisplayMap />
         <Bandeau />
         <Selection />
         <Footer />
