@@ -1,0 +1,13 @@
+.bandeau {
+  display: flex;
+  background-color: #00aadc;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 5vh;
+}
+.prise {
+  height: 30px;
+}
