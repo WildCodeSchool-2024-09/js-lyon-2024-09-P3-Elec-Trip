@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@font-face {
+  font-family: "nexa_bold";
+  src: url("src/assets/fonts/Nexa/nexa-bold-webfont.woff2") format("woff2"),
+    url("src/assets/fonts/Nexa/nexa-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
