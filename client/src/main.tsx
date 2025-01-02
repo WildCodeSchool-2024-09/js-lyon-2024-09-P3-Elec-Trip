@@ -7,11 +7,11 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import Account from "./pages/Account";
 import AnyQuestions from "./pages/AnyQuestions";
-import BorneMap from "./pages/BorneMap";
 import CarMap from "./pages/CarMap";
+import ChargerMap from "./pages/ChargerMap";
 // Import the main app component
 // import App from "./App";
-import Presentation from "./pages/Presentation";
+import HomePage from "./pages/HomePage";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -26,7 +26,7 @@ import Presentation from "./pages/Presentation";
 const router = createBrowserRouter([
   {
     path: "/", // The root path
-    element: <Presentation />, // Renders the App component for the home page
+    element: <HomePage />, // Renders the App component for the home page
   },
   // {
   //   path: "/app", //
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
   // },
   {
     path: "/trouver_une_borne",
-    element: <BorneMap />,
+    element: <ChargerMap />,
   },
   {
     path: "/trouver_une_voiture",

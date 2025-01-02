@@ -6,7 +6,7 @@ import Selection from "../components/Selection/Selection";
 
 import "../App.css";
 
-function BorneMap() {
+function ChargerMap() {
   return (
     <>
       <nav>
@@ -23,4 +23,4 @@ function BorneMap() {
   );
 }
 
-export default BorneMap;
+export default ChargerMap;

@@ -2,7 +2,7 @@ import NavHome from "../Nav/NavHome";
 
 import "./Header.css";
 
-import icon_scroll from "../../images/icon_scroll.png";
+import IconScroll from "../../images/icon_scroll.png";
 
 function Header() {
   return (
@@ -23,7 +23,7 @@ function Header() {
         </article>
       </section>
       <div className="iconCenter">
-        <img className="iconScroll" src={icon_scroll} alt={icon_scroll} />
+        <img className="iconScroll" src={IconScroll} alt={IconScroll} />
       </div>
     </header>
   );

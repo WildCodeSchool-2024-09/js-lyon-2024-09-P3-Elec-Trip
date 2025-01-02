@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import "./NavHome.css";
 
-import burgermenu from "../../images/Burger-menu_blanc.png";
-import logo from "../../images/Logo_ELECTRIP.png";
-import iconHome from "../../images/icon_home.png";
+import BurgerMenu from "../../images/Burger-menu_blanc.png";
+import Logo from "../../images/Logo_ELECTRIP.png";
+import IconHome from "../../images/icon_home.png";
 
 function NavHome() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,18 +37,18 @@ function NavHome() {
 
   return (
     <nav className="navHome">
-      <img className="imgNavHome" src={logo} alt="logo" />
+      <img className="imgNavHome" src={Logo} alt={Logo} />
       {isMobile ? (
         <>
           <img
-            src={burgermenu}
-            alt={burgermenu}
-            className="burgermenu"
+            src={BurgerMenu}
+            alt={BurgerMenu}
+            className="burgerMenu"
             onClick={toggleMenu}
             onKeyDown={handleKeyPress}
           />
           {isMenuOpen && (
-            <div className="menu-bubble">
+            <div className="menuBubble">
               <ul>
                 <Link to="/" className="linkBurger">
                   Accueil
@@ -72,7 +72,7 @@ function NavHome() {
       ) : (
         <ul>
           <Link to="/">
-            <img src={iconHome} alt="home" />
+            <img src={IconHome} alt={IconHome} />
           </Link>
           <Link to="/trouver_une_borne" className="link">
             Trouver une borne

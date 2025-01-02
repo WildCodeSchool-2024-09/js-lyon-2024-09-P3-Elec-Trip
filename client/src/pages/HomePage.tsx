@@ -4,16 +4,16 @@ import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 
 import "../App.css";
-import "./Presentation.css";
+import "./HomePage.css";
 
-import img_about from "../images/img_about.jpg";
-import img_borne from "../images/img_borne.jpg";
-import img_voiture from "../images/img_voiture.jpg";
-import marker_about from "../images/marker_about.png";
-import marker_borne from "../images/marker_borne.png";
-import marker_voiture from "../images/marker_voiture.png";
+import ImgAbout from "../images/img_about.jpg";
+import ImgCharger from "../images/img_borne.jpg";
+import ImgCar from "../images/img_voiture.jpg";
+import MarkerAbout from "../images/marker_about.png";
+import MarkerCharger from "../images/marker_borne.png";
+import MarkerCar from "../images/marker_voiture.png";
 
-function Presentation() {
+function HomePage() {
   return (
     <>
       <Header />
@@ -21,7 +21,7 @@ function Presentation() {
         <div className="homeContenair">
           <div className="homeInfo">
             <div className="homeTitle">
-              <img src={marker_borne} alt={marker_borne} />
+              <img src={MarkerCharger} alt={MarkerCharger} />
               <h2>Trouver une borne</h2>
             </div>
             <div className="homeContent">
@@ -37,7 +37,7 @@ function Presentation() {
               </Link>
             </div>
           </div>
-          <img className="imgHome" src={img_borne} alt={img_borne} />
+          <img className="imgHome" src={ImgCharger} alt={ImgCharger} />
         </div>
       </section>
 
@@ -45,7 +45,7 @@ function Presentation() {
         <div className="homeContenair2">
           <div className="homeInfo2">
             <div className="homeTitle">
-              <img src={marker_voiture} alt={marker_voiture} />
+              <img src={MarkerCar} alt={MarkerCar} />
               <h2>Trouver une voiture</h2>
             </div>
             <div className="homeContent">
@@ -61,7 +61,7 @@ function Presentation() {
               </Link>
             </div>
           </div>
-          <img className="imgHome" src={img_voiture} alt={img_voiture} />
+          <img className="imgHome" src={ImgCar} alt={ImgCar} />
         </div>
       </section>
 
@@ -69,7 +69,7 @@ function Presentation() {
         <div className="homeContenair">
           <div className="homeInfo">
             <div className="homeTitle">
-              <img src={marker_about} alt={marker_about} />
+              <img src={MarkerAbout} alt={MarkerAbout} />
               <h2>À propos</h2>
             </div>
             <div className="homeContent">
@@ -87,7 +87,7 @@ function Presentation() {
               </ul>
             </div>
           </div>
-          <img className="imgHome" src={img_about} alt={img_about} />
+          <img className="imgHome" src={ImgAbout} alt={ImgAbout} />
         </div>
       </section>
       <Footer />
@@ -95,4 +95,4 @@ function Presentation() {
   );
 }
 
-export default Presentation;
+export default HomePage;
