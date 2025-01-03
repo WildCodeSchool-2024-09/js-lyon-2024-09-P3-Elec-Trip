@@ -1,0 +1,57 @@
+.selection-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-left: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.adresse {
+  margin-bottom: 15px;
+  bottom: 20px;
+}
+
+.adresse h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.adresse p {
+  margin: 2px 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.details p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.statut-libre {
+  color: #008000;
+  font-weight: bold;
+}
+
+.bloc-info {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 80px;
+}
+
+.voiture {
+  position: relative;
+  right: 35px;
+}
+
+.voiture img {
+  width: 50vw;
+}
+
+.distance,
+.disponibilite,
+.temps {
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
