@@ -11,7 +11,7 @@ function App() {
       <nav>
         <Nav />
       </nav>
-      
+
       <main>
         <DisplayMap />
         <Bandeau />
