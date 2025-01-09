@@ -1,4 +1,4 @@
-.bandeau {
+.banner {
   display: flex;
   background-color: #00aadc;
   color: white;
@@ -8,6 +8,6 @@
   padding: 1rem;
   height: 5vh;
 }
-.prise {
+.Wire {
   height: 30px;
 }

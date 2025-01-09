@@ -10,15 +10,12 @@ interface EVStations {
 }
 
 function DisplayMap() {
-  // Lattitude / longitude // 48.866667,2.333333
-  // const position = [2.33, 48.8582];
-
   const [EVStationcoordinates, setEVStationCoordinates] = useState<
     EVStations[]
   >([]);
 
   useEffect(() => {
-    fetch("http://localhost:3310/EVstations")
+    fetch(`${import.meta.env.VITE_API_URL}/EVstations`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Error fetching data from API");

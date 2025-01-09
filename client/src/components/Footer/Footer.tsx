@@ -1,4 +1,4 @@
-import Prise from "../../images/btn_borne_minimenu.png";
+import Wire from "../../images/btn_borne_minimenu.png";
 import Menu from "../../images/btn_menu_minimenu.png";
 import Voiture from "../../images/btn_voiture_minimenu.png";
 import "./Footer.css";
@@ -8,7 +8,7 @@ function Footer() {
     <>
       <section className="footer">
         <img src={Menu} alt="menulogo" />
-        <img src={Prise} alt="priselogo" />
+        <img src={Wire} alt="Wirelogo" />
         <img src={Voiture} alt="voiturelogo" />
       </section>
     </>
