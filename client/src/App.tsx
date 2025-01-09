@@ -1,5 +1,5 @@
 import "./App.css";
-import Bandeau from "./components/Bandeau/Bandeau";
+import Banner from "./components/Banner/Banner";
 import Footer from "./components/Footer/Footer";
 import DisplayMap from "./components/Map/DisplayMap";
 import Nav from "./components/Nav/Nav";
@@ -14,7 +14,7 @@ function App() {
 
       <main>
         <DisplayMap />
-        <Bandeau />
+        <Banner />
         <Selection />
         <Footer />
       </main>

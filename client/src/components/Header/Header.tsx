@@ -23,7 +23,11 @@ function Header() {
         </article>
       </section>
       <div className="iconCenter">
-        <img className="iconScroll" src={IconScroll} alt={IconScroll} />
+        <img
+          className="iconScroll"
+          src={IconScroll}
+          alt="Icone qui invite scroll"
+        />
       </div>
     </header>
   );

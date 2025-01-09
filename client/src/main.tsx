@@ -5,12 +5,12 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 /* ************************************************************************* */
 
+// Import the main app component
+import App from "./App";
 import Account from "./pages/Account";
 import AnyQuestions from "./pages/AnyQuestions";
 import CarMap from "./pages/CarMap";
 import ChargerMap from "./pages/ChargerMap";
-// Import the main app component
-// import App from "./App";
 import HomePage from "./pages/HomePage";
 
 // Import additional components for new routes
@@ -28,10 +28,10 @@ const router = createBrowserRouter([
     path: "/", // The root path
     element: <HomePage />, // Renders the App component for the home page
   },
-  // {
-  //   path: "/app", //
-  //   element: <App />,
-  // },
+  {
+    path: "/app", //
+    element: <App />,
+  },
   {
     path: "/trouver_une_borne",
     element: <ChargerMap />,

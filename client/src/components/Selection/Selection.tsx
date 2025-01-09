@@ -1,10 +1,10 @@
 import "./Selection.css";
-import carImage from "../../images/Borne_recharge_illustration.png";
+import CarImage from "../../images/Borne_recharge_illustration.png";
 
 function Selection() {
   return (
     <div className="selection-container">
-      <section className="adresse">
+      <section className="adress">
         <h2>Place des archives</h2>
         <p>18 rue Jean Jaures</p>
         <p>69002 Lyon</p>
@@ -12,7 +12,7 @@ function Selection() {
 
       <section className="bloc-info">
         <section className="voiture">
-          <img src={carImage} alt="Voiture" />
+          <img src={CarImage} alt="Voiture electrique" />
         </section>
 
         <div className="details">

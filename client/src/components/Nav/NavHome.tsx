@@ -37,7 +37,7 @@ function NavHome() {
 
   return (
     <nav className="navHome">
-      <img className="imgNavHome" src={Logo} alt={Logo} />
+      <img className="imgNavHome" src={Logo} alt="Logo de Electrip" />
       {isMobile ? (
         <>
           <img
@@ -72,7 +72,7 @@ function NavHome() {
       ) : (
         <ul>
           <Link to="/">
-            <img src={IconHome} alt={IconHome} />
+            <img src={IconHome} alt="Icone page Accueil" />
           </Link>
           <Link to="/trouver_une_borne" className="link">
             Trouver une borne
