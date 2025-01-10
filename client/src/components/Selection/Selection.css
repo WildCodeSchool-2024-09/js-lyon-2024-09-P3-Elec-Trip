@@ -28,7 +28,7 @@
   font-size: 0.9rem;
 }
 
-.statut-libre {
+.statut-available {
   color: #008000;
   font-weight: bold;
 }
@@ -40,18 +40,18 @@
   padding-bottom: 80px;
 }
 
-.voiture {
+.car {
   position: relative;
   right: 35px;
 }
 
-.voiture img {
+.car img {
   width: 50vw;
 }
 
 .distance,
-.disponibilite,
-.temps {
+.availability,
+.time {
   padding-bottom: 10px;
   padding-left: 20px;
 }

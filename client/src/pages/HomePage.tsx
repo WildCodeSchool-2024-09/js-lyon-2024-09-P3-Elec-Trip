@@ -99,7 +99,7 @@ function HomePage() {
         <img
           className="questionimage"
           src={MarkerQuestion}
-          alt={MarkerQuestion}
+          alt="Logo indiquant la partie Questions Fréquentes"
         />
         <section className="questions">
           <div>
@@ -132,7 +132,7 @@ function HomePage() {
               Combien de temps puis-je utiliser une borne de recharge ?
             </label>
             <div className="content" id="content-2">
-              <div>La durée minimal est de 15min est ne peut exéder 1h30.</div>
+              <div>La durée minimal est de 15min est ne peut exéder 2h00.</div>
             </div>
 
             <input type="checkbox" id="view-3" />
