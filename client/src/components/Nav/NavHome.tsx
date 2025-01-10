@@ -42,7 +42,7 @@ function NavHome() {
         <>
           <img
             src={BurgerMenu}
-            alt={BurgerMenu}
+            alt="logo indiquant le bouton du menu"
             className="burgerMenu"
             onClick={toggleMenu}
             onKeyDown={handleKeyPress}

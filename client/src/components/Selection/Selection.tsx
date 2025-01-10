@@ -11,7 +11,7 @@ function Selection() {
       </section>
 
       <section className="bloc-info">
-        <section className="voiture">
+        <section className="car">
           <img src={CarImage} alt="Voiture electrique" />
         </section>
 
@@ -21,12 +21,12 @@ function Selection() {
             <b>336 m</b>
           </section>
 
-          <section className="disponibilite">
+          <section className="availability">
             <p>Disponibilité</p>
-            <span className="statut-libre">🟢 Libre</span>
+            <span className="statut-available">🟢 available</span>
           </section>
 
-          <section className="temps">
+          <section className="time">
             <p>Temps d'utilisation</p>
             <b>⏱️ 2 jours</b>
           </section>

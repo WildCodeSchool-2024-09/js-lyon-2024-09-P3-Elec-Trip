@@ -99,7 +99,7 @@ function HomePage() {
         <img
           className="questionimage"
           src={MarkerQuestion}
-          alt={MarkerQuestion}
+          alt="Logo indiquant la partie Questions Fréquentes"
         />
         <section className="questions">
           <div>
