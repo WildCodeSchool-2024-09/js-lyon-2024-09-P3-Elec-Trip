@@ -7,7 +7,7 @@ import "./Footerhome.css";
 function Footer() {
   return (
     <>
-      <section className="footer">
+      <section className="footerhome">
         <img className="footerHomeImage" src={Edf} alt="edflogo" />
         <img className="footerHomeImage" src={Engie} alt="engielogo" />
         <img className="footerHomeImage" src={Green} alt="greenlogo" />

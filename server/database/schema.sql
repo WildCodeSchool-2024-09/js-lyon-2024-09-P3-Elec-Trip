@@ -1,8 +1,8 @@
 CREATE TABLE station (
   id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,
   nom_station VARCHAR(80),
-  x_longitude FLOAT,
-  y_latitude FLOAT,
+  x_longitude FLOAT NOT NULL,
+  y_latitude FLOAT NOT NULL,
   nbre_Wires INT,
   acces_recharge BOOLEAN,
   accessibilite_jours VARCHAR(3),
