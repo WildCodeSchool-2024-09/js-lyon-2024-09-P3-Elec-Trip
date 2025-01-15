@@ -11,7 +11,7 @@ section {
   padding: 30px;
 }
 .questions {
-  background-color: #fefef3;
+  background-color: #fafaf5;
   padding: 30px;
   display: flex;
 }
@@ -335,18 +335,19 @@ input {
 label {
   width: 100%;
   float: left;
-  background: #e4e3e3;
+  color: #787878;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  background: #fafaf5;
   outline: none;
   border: 0;
-  margin: 0;
+  margin: 1rem 0 0 0;
   padding: 0.65em;
   cursor: pointer;
   border-radius: 0.15em;
   overflow: hidden;
-  color: #363636;
   font-size: 1.35em;
-  border-left: 0.25em inset #dfa829;
-  border-radius: 5%;
+  border-left: 0.25em inset #ffc528;
+  box-shadow: 0 5px 20px rgba(46, 51, 51, 0.2);
 }
 
 label:hover {
@@ -356,23 +357,24 @@ label:hover {
 .content {
   float: left;
   width: 100%;
-  background: #e4e3e3;
-  color: #050404;
+  color: #787878;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  background: #fafaf5;
   overflow: hidden;
   max-height: 0vmin;
   transition: max-height 0.75s ease 0s;
   margin-top: -0.5vmin;
   margin-bottom: 1vmin;
   border-radius: 0 0 0.5vmin 0.5vmin;
+  box-shadow: 0 5px 20px rgba(46, 51, 51, 0.2);
 }
 
 .content > div {
   padding: 0.5em 0.75em;
-  border-left: 0.25em inset #ef9517;
+  border-left: 0.35em inset #ffc528;
   border-right: 0.25em;
   text-align: justify;
   font-size: 0.95em;
-  color: #010101;
 }
 
 .container + .container .content a {
