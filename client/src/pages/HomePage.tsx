@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import Footer from "../components/Footerhome/Footerhome";
+// import "../components/Footerhome/Footerhome.tsx";
 import Header from "../components/Header/Header";
 
 import "../App.css";
@@ -13,7 +14,6 @@ import ImgCar from "../images/img_voiture.jpg";
 import MarkerAbout from "../images/marker_about.png";
 import MarkerCharger from "../images/marker_borne.png";
 import MarkerCar from "../images/marker_voiture.png";
-import MarkerQuestion from "../images/point-dinterrogation.png";
 
 function HomePage() {
   return (
@@ -97,65 +97,64 @@ function HomePage() {
         </div>
       </section>
 
-      <img
-        className="questionimage"
-        src={MarkerQuestion}
-        alt="Logo indiquant la partie Questions Fréquentes"
-      />
       <section className="section2">
-        <div>
-          <h2 className="title">Questions fréquentes</h2>
-          <input type="checkbox" id="view-0" />
-          <label htmlFor="view-0">
-            Puis-je bénéficier des services de localisation de bornes pour mon
-            véhicule personnel ?
-          </label>
-          <div className="content" id="content-0">
-            <div>
-              Oui, vous pouvez utiliser notre service pour localiser rapidement
-              les bornes de recharge proches de votre véhicule. Accédez à notre
-              carte interactive pour vérifier leur disponibilité et leurs
-              caractéristiques en temps réel.
+        <div className="homecontainer2">
+          <div className="homeContent">
+            <h2 className="title">Questions fréquentes</h2>
+            <input type="checkbox" id="view-0" />
+            <label htmlFor="view-0">
+              Puis-je bénéficier des services de localisation de bornes pour mon
+              véhicule personnel ?
+            </label>
+            <div className="content" id="content-0">
+              <div>
+                Oui, vous pouvez utiliser notre service pour localiser
+                rapidement les bornes de recharge proches de votre véhicule.
+                Accédez à notre carte interactive pour vérifier leur
+                disponibilité et leurs caractéristiques en temps réel.
+              </div>
             </div>
-          </div>
 
-          <input type="checkbox" id="view-1" />
-          <label htmlFor="view-1">
-            Quel est le prix de l'utilisation d'une borne de recharge ?
-          </label>
-          <div className="content" id="content-1">
-            <div>
-              Vous trouverez toutes les informations dans l'onglet "Tarifs".
+            <input type="checkbox" id="view-1" />
+            <label htmlFor="view-1">
+              Quel est le prix de l'utilisation d'une borne de recharge ?
+            </label>
+            <div className="content" id="content-1">
+              <div>
+                Vous trouverez toutes les informations dans l'onglet "Tarifs".
+              </div>
             </div>
-          </div>
-          <input type="checkbox" id="view-2" />
-          <label htmlFor="view-2">
-            Combien de temps puis-je utiliser une borne de recharge ?
-          </label>
-          <div className="content" id="content-2">
-            <div>La durée minimal est de 15min est ne peut exéder 2h00.</div>
-          </div>
+            <input type="checkbox" id="view-2" />
+            <label htmlFor="view-2">
+              Combien de temps puis-je utiliser une borne de recharge ?
+            </label>
+            <div className="content" id="content-2">
+              <div>La durée minimal est de 15min est ne peut exéder 2h00.</div>
+            </div>
 
-          <input type="checkbox" id="view-3" />
-          <label htmlFor="view-3">
-            Quel est le prix d'une location d'un véhicule électrique ?
-          </label>
-          <div className="content" id="content-3">
-            <div>Here you can write the necessary code to provide details.</div>
-          </div>
+            <input type="checkbox" id="view-3" />
+            <label htmlFor="view-3">
+              Quel est le prix d'une location d'un véhicule électrique ?
+            </label>
+            <div className="content" id="content-3">
+              <div>
+                Here you can write the necessary code to provide details.
+              </div>
+            </div>
 
-          <input type="checkbox" id="view-4" />
-          <label htmlFor="view-4">
-            Combien de temps puis-je me véhiculer avec le véhicule loué ?
-          </label>
-          <div className="content" id="content-4">
-            <div>Here you can write the necessary code to provide details.</div>
+            <input type="checkbox" id="view-4" />
+            <label htmlFor="view-4">
+              Combien de temps puis-je me véhiculer avec le véhicule loué ?
+            </label>
+            <div className="content" id="content-4">
+              <div>
+                Here you can write the necessary code to provide details.
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section className="">
-        <Footer />
-      </section>
+      <Footer />
     </>
   );
 }
