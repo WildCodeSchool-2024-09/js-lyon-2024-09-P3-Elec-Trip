@@ -21,7 +21,6 @@ CREATE TABLE bornes (
     ON DELETE CASCADE
     ON UPDATE CASCADE
 );
-
    INSERT INTO station (id_station, n_station, ad_station, xlongitude, ylatitude, nbre_pdc, acces_recharge, accessibilite, puiss_max, type_prise) VALUES
   ('FR*SSD*PABVVRENAULT75012*1', 'ABVV Renault Paris 12', '15 Rue de Lyon 75012 Paris', 2.37445, 48.846004, 3, 'Gratuit', '24/24 7/7 jours', 22.00, 'T2'),
   ('FR*SSD*PABVVNISSAN33000*1', 'ABVV Nissan Bordeaux', '25 Cours de Verdun 33000 Bordeaux', -0.5664, 44.8378, 5, 'Payant', '08:00-22:00', 50.00, 'T2'),

@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  background-color: #00aadc;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.Wire {
+  width: 1.5rem;
+}

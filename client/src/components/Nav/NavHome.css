@@ -1,0 +1,87 @@
+.navHome {
+  max-width: 1200px;
+  height: 140px;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navHome ul {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.link {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+.linkButton button {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  padding: 8px 45px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.imgNavHome {
+  width: 120px;
+}
+.burgerMenu {
+  width: 24px;
+}
+.menuBubble {
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(46, 51, 51, 0.75);
+  padding: 20px;
+  z-index: 10;
+}
+.menuBubble ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.menuBubble .link,
+.menuBubble .linkButton {
+  color: white;
+  text-decoration: none;
+}
+
+/*---- Burger Menu ----*/
+@media (max-width: 860px) {
+  .navHome > ul {
+    display: none;
+  }
+  .burgerMenu {
+    display: block;
+    cursor: pointer;
+  }
+  .linkBurger {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #004b47;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .linkButton button {
+    color: #004b47;
+    border: 2px solid #004b47;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+  }
+}
