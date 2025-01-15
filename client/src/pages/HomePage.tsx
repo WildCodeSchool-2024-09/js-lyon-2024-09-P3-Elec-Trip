@@ -14,7 +14,6 @@ import ImgCar from "../images/img_voiture.jpg";
 import MarkerAbout from "../images/marker_about.png";
 import MarkerCharger from "../images/marker_borne.png";
 import MarkerCar from "../images/marker_voiture.png";
-import MarkerQuestion from "../images/point-dinterrogation.png";
 
 function HomePage() {
   return (
@@ -96,15 +95,10 @@ function HomePage() {
             alt="cliché illustrant un homme qui cour"
           />
         </div>
-        <img
-          className="questionimage"
-          src={MarkerQuestion}
-          alt="Logo indiquant la partie Questions Fréquentes"
-        />
       </section>
 
       <section className="section2">
-        <div className="homeContenair">
+        <div className="homecontainer2">
           <div className="homeContent">
             <h2 className="title">Questions fréquentes</h2>
             <input type="checkbox" id="view-0" />
