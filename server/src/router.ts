@@ -13,6 +13,10 @@ router.get("/api/items", itemActions.browse);
 router.get("/api/items/:id", itemActions.read);
 router.post("/api/items", itemActions.add);
 
+import stationLocationAction from "./modules/stationLocation/stationLocationAction";
+
+router.get("/", stationLocationAction.browse);
+
 /* ************************************************************************* */
 
 export default router;
