@@ -17,16 +17,17 @@
   gap: 40px;
 }
 .accountInfos {
-  width: 350px;
+  width: 70%;
   margin: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .accountInfos h1 {
   font-family: "Nexa", Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.72rem;
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
@@ -38,8 +39,7 @@
   flex-direction: row;
   justify-content: space-evenly;
 }
-.accountButton,
-button {
+.accountButton button {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: #fff;
@@ -57,9 +57,10 @@ button {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: #004b47;
+  text-align: center;
   background-color: #fff;
   margin-top: 50px;
-  padding: 2px 35px;
+  padding: 10px 35px;
   border: none;
   border-radius: 2rem;
   cursor: pointer;
@@ -104,20 +105,11 @@ input {
     max-width: 100%;
   }
   .accountInfos {
-    width: 500px;
+    width: 425px;
     gap: 20px;
   }
   .accountInfos h1 {
-    color: #fff;
-    line-height: 60px;
-    text-align: center;
-  }
-  .accountInfos p {
-    font-size: 1.4rem;
-    color: #fff;
-    font-weight: 300;
-    line-height: 48px;
-    text-align: center;
+    font-size: 2.4rem;
   }
 }
 
@@ -129,19 +121,10 @@ input {
     justify-content: center;
   }
   .accountInfos {
-    align-items: center;
+    width: 500px;
     gap: 20px;
   }
   .accountInfos h1 {
     font-size: 2.875rem;
-    color: #fff;
-    line-height: 60px;
-  }
-  .accountInfos p {
-    font-size: 1.40rem;
-    color: #fff;
-    font-weight: 300;
-    line-height: 48px;
-    text-align: justify;
   }
 }

@@ -69,7 +69,7 @@ section {
   margin-top: 50px;
   padding: 10px 35px;
   border: none;
-  border-radius: 20px;
+  border-radius: 2rem;
   cursor: pointer;
   box-shadow: 0 5px 20px rgba(46, 51, 51, 0.2);
 }
