@@ -334,6 +334,9 @@ input {
 
 label {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   float: left;
   color: #787878;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -389,18 +392,8 @@ input:checked + label + .content {
 .container + .container input:checked + label + .content {
   max-height: 10vh;
 }
-
-label:after {
-  content: "+";
+.buttonplus {
+  display: flex;
   float: right;
-  font-size: 0.75em;
-  background: #dfa829;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 100%;
-  width: 1.5em;
-  height: 1.5em;
-  text-align: center;
-  line-height: 1.5em;
-  transition: all 0.5s ease 0s;
+  justify-content: center;
 }
