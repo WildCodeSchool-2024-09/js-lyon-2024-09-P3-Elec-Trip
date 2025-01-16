@@ -14,7 +14,7 @@ router.get("/api/items/:id", itemActions.read);
 router.post("/api/items", itemActions.add);
 
 import stationLocationAction from "./modules/stationLocation/stationLocationAction";
-router.get("/", stationLocationAction.browse);
+router.get("/EVstations", stationLocationAction.browse);
 
 import localisationActions from "./modules/localisation/localisationActions";
 router.get("/EVstations", localisationActions.browse);

@@ -1,17 +1,17 @@
 import type { LatLngTuple } from "leaflet";
 import { useEffect, useState } from "react";
 import { MapContainer, Marker, TileLayer } from "react-leaflet";
+import type { localisation } from "../../../../server/src/modules/stationLocation/stationLocationRepository";
 import "./DisplayMap.css";
 import "leaflet/dist/leaflet.css";
 
-interface EVStations {
-  id: number;
-  geocode: LatLngTuple;
-}
+type ExtendedLocalisation = Omit<localisation, "coordinates"> & {
+  coordinates: LatLngTuple;
+};
 
 function DisplayMap() {
   const [EVStationcoordinates, setEVStationCoordinates] = useState<
-    EVStations[]
+    ExtendedLocalisation[]
   >([]);
 
   useEffect(() => {
@@ -42,7 +42,7 @@ function DisplayMap() {
         url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
       />
       {EVStationcoordinates.map((item) => (
-        <Marker key={item.id} position={item.geocode} />
+        <Marker key={item.id_station} position={item.coordinates} />
       ))}
     </MapContainer>
   );
