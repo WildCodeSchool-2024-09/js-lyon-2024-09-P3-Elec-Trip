@@ -12,6 +12,11 @@ import IconUser from "../images/icon_log_user.png";
 function Account() {
   const [isLogin, setIsLogin] = useState(false);
 
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [firstname, setFirstname] = useState("");
+  const [lastname, setLastname] = useState("");
+
   const handleLoginClick = () => {
     setIsLogin(true);
   };
@@ -21,7 +26,7 @@ function Account() {
   };
 
   return (
-    <main>
+    <header className="accountPage">
       <NavHome />
       <section className="accountContenair">
         <article className="accountInfos">
@@ -48,6 +53,8 @@ function Account() {
                 type="text"
                 id="email"
                 name="email"
+                defaultValue={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <label className="accountLabel" htmlFor="password">
                 <img
@@ -61,20 +68,27 @@ function Account() {
                 type="password"
                 id="password"
                 name="password"
+                defaultValue={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
+              <button className="validateBtn" type="button">
+                Se connecter
+              </button>
             </>
           ) : (
             <>
               <h1>Créez votre compte</h1>
               <label className="accountLabel" htmlFor="firstname">
                 <img src={IconUser} alt="icone utilisateur" />
-                Nom
+                Prénom
               </label>
               <input
                 className="accountInput"
                 type="text"
                 id="firstname"
                 name="firstname"
+                defaultValue={firstname}
+                onChange={(e) => setFirstname(e.target.value)}
               />
               <label className="accountLabel" htmlFor="lastname">
                 <img src={IconUser} alt="icone utilisateur" />
@@ -85,6 +99,8 @@ function Account() {
                 type="text"
                 id="lastname"
                 name="lastname"
+                defaultValue={lastname}
+                onChange={(e) => setLastname(e.target.value)}
               />
               <label className="accountLabel" htmlFor="email">
                 <img
@@ -98,6 +114,8 @@ function Account() {
                 type="text"
                 id="email"
                 name="email"
+                defaultValue={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <label className="accountLabel" htmlFor="password">
                 <img
@@ -111,12 +129,17 @@ function Account() {
                 type="password"
                 id="password"
                 name="password"
+                defaultValue={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
+              <button className="validateBtn" type="button">
+                Confirmer
+              </button>
             </>
           )}
         </article>
       </section>
-    </main>
+    </header>
   );
 }
 
