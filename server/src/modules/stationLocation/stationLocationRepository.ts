@@ -16,7 +16,7 @@ type localisation = {
 
 class stationLocalisationRepository {
   async getStationLocalisation() {
-    const [rows] = await databaseClient.query<Rows>("select * from item");
+    const [rows] = await databaseClient.query<Rows>("select * from station");
 
     return rows as localisation[];
   }

@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  background-color: #020202;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+.footerHomeImage {
+  width: 3.5rem;
+}
