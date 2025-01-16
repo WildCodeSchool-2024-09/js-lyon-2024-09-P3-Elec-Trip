@@ -315,22 +315,38 @@ input {
 label {
   width: 100%;
   float: left;
-  background: #e4e3e3;
+  background: #fff;
   outline: none;
   border: 0;
   margin: 0;
   padding: 0.65em;
   cursor: pointer;
-  border-radius: 0.15em;
   overflow: hidden;
   color: #363636;
   font-size: 1.35em;
-  border-left: 0.25em inset #dfa829;
-  border-radius: 5%;
+  border-left: 0.25em inset #fff;
+  border-radius: 0.5rem;
 }
-
 label:hover {
   background: #bebcbc;
+}
+/* label:after {
+  content: "+";
+  float: right;
+  font-size: 0.75em;
+  background: #dfa829;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 100%;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  transition: all 0.5s ease 0s;
+} */
+input:checked + label + .content {
+  max-height: 20vh;
+  transition: max-height 0.75s ease 0s;
 }
 
 .content {
@@ -345,7 +361,6 @@ label:hover {
   margin-bottom: 1vmin;
   border-radius: 0 0 0.5vmin 0.5vmin;
 }
-
 .content > div {
   padding: 0.5em 0.75em;
   border-left: 0.25em inset #ef9517;
@@ -354,31 +369,9 @@ label:hover {
   font-size: 0.95em;
   color: #010101;
 }
-
 .container + .container .content a {
   margin-top: 0;
 }
-
-input:checked + label + .content {
-  max-height: 20vh;
-  transition: max-height 0.75s ease 0s;
-}
-
 .container + .container input:checked + label + .content {
   max-height: 10vh;
-}
-
-label:after {
-  content: "+";
-  float: right;
-  font-size: 0.75em;
-  background: #dfa829;
-  color: #fff;
-  font-weight: bold;
-  border-radius: 100%;
-  width: 1.5em;
-  height: 1.5em;
-  text-align: center;
-  line-height: 1.5em;
-  transition: all 0.5s ease 0s;
 }
