@@ -74,9 +74,9 @@ button {
   cursor: text;
   outline: none;
 }
-/* label:hover {
-  background: #bebcbc00;
-} */
+label:hover {
+  background: #00000000;
+}
 input {
   display: none;
 }
