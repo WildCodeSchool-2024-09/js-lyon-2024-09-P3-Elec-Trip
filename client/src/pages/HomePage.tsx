@@ -101,8 +101,11 @@ function HomePage() {
           src={MarkerQuestion}
           alt="Logo indiquant la partie Questions Fréquentes"
         />
-        <section className="questions">
-          <div>
+      </section>
+
+      <section className="section2">
+        <div className="homeContenair">
+          <div className="homeContent">
             <h2 className="title">Questions fréquentes</h2>
             <input type="checkbox" id="view-0" />
             <label htmlFor="view-0">
@@ -155,7 +158,7 @@ function HomePage() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </section>
       <Footer />
     </>
