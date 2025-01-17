@@ -8,13 +8,13 @@ import "../App.css";
 import "./HomePage.css";
 import "../components/Footerhome/Footerhome.css";
 
+import Buttonplus from "../images/btn_+.png";
 import ImgAbout from "../images/img_about.jpg";
 import ImgCharger from "../images/img_borne.jpg";
 import ImgCar from "../images/img_voiture.jpg";
 import MarkerAbout from "../images/marker_about.png";
 import MarkerCharger from "../images/marker_borne.png";
 import MarkerCar from "../images/marker_voiture.png";
-import MarkerQuestion from "../images/point-dinterrogation.png";
 
 function HomePage() {
   return (
@@ -96,18 +96,21 @@ function HomePage() {
             alt="cliché illustrant un homme qui cour"
           />
         </div>
-        <img
-          className="questionimage"
-          src={MarkerQuestion}
-          alt="Logo indiquant la partie Questions Fréquentes"
-        />
-        <section className="questions">
-          <div>
+      </section>
+
+      <section className="section2">
+        <div className="homecontainer2">
+          <div className="homeContent">
             <h2 className="title">Questions fréquentes</h2>
             <input type="checkbox" id="view-0" />
             <label htmlFor="view-0">
               Puis-je bénéficier des services de localisation de bornes pour mon
               véhicule personnel ?
+              <img
+                className="buttonplus"
+                src={Buttonplus}
+                alt="bouton pour developper"
+              />{" "}
             </label>
             <div className="content" id="content-0">
               <div>
@@ -121,6 +124,11 @@ function HomePage() {
             <input type="checkbox" id="view-1" />
             <label htmlFor="view-1">
               Quel est le prix de l'utilisation d'une borne de recharge ?
+              <img
+                className="buttonplus"
+                src={Buttonplus}
+                alt="bouton pour developper"
+              />{" "}
             </label>
             <div className="content" id="content-1">
               <div>
@@ -130,14 +138,23 @@ function HomePage() {
             <input type="checkbox" id="view-2" />
             <label htmlFor="view-2">
               Combien de temps puis-je utiliser une borne de recharge ?
+              <img
+                className="buttonplus"
+                src={Buttonplus}
+                alt="bouton pour developper"
+              />{" "}
             </label>
             <div className="content" id="content-2">
               <div>La durée minimal est de 15min est ne peut exéder 2h00.</div>
             </div>
-
             <input type="checkbox" id="view-3" />
             <label htmlFor="view-3">
               Quel est le prix d'une location d'un véhicule électrique ?
+              <img
+                className="buttonplus"
+                src={Buttonplus}
+                alt="bouton pour developper"
+              />{" "}
             </label>
             <div className="content" id="content-3">
               <div>
@@ -148,6 +165,11 @@ function HomePage() {
             <input type="checkbox" id="view-4" />
             <label htmlFor="view-4">
               Combien de temps puis-je me véhiculer avec le véhicule loué ?
+              <img
+                className="buttonplus"
+                src={Buttonplus}
+                alt="bouton pour developper"
+              />
             </label>
             <div className="content" id="content-4">
               <div>
@@ -155,7 +177,7 @@ function HomePage() {
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </section>
       <Footer />
     </>
