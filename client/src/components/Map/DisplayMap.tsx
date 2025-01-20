@@ -1,15 +1,15 @@
 import type { LatLngTuple } from "leaflet";
 import { useEffect, useState } from "react";
-import type { localisation } from "../../../../server/src/modules/stationLocation/stationLocationRepository";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
+import type { localisation } from "../../../../server/src/modules/stationLocation/stationLocationRepository";
 import "./DisplayMap.css";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import { icon } from "./constant";
 
 type ExtendedLocalisation = Omit<localisation, "coordinates"> & {
-  id : number; 
-  geocode : LatLngTuple;
+  id: number;
+  geocode: LatLngTuple;
 };
 
 function LocationMarker() {
@@ -75,9 +75,9 @@ function DisplayMap() {
         url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
       />
       {EVStationcoordinates.map((item) => (
-        <Marker key={item.id} position={item.geocode} />        
+        <Marker key={item.id} position={item.geocode} />
       ))}
-      <LocationMarker/>
+      <LocationMarker />
     </MapContainer>
   );
 }
