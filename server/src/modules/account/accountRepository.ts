@@ -14,10 +14,6 @@ type user = {
   email: string;
   password: string;
 };
-const fakeuser = {
-  email: "oliver@pepette.com",
-  password: "norefund",
-};
 
 class accountRepository {
   // Creation du compte
