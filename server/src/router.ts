@@ -20,8 +20,6 @@ router.post("/api/account", accountActions.add);
 router.put("/api/account", accountActions.edit);
 
 import localisationActions from "./modules/localisation/localisationActions";
-
 router.get("/EVstations", localisationActions.browse);
-/* ************************************************************************* */
 
 export default router;
