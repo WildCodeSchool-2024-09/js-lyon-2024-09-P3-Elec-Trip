@@ -8,7 +8,8 @@ import L from "leaflet";
 import { icon } from "./constant";
 
 type ExtendedLocalisation = Omit<localisation, "coordinates"> & {
-  coordinates: LatLngTuple;
+  id : number; 
+  geocode : LatLngTuple;
 };
 
 function LocationMarker() {
@@ -17,13 +18,13 @@ function LocationMarker() {
   const map = useMap();
 
   useEffect(() => {
-    map.locate().on("locationfound", (e) => {
-      setPosition(e.latlng);
-      map.flyTo(e.latlng, map.getZoom());
-      const radius = e.accuracy;
-      const circle = L.circle(e.latlng, radius);
+    map.locate().on("locationfound", (informationGeolocObject) => {
+      setPosition(informationGeolocObject.latlng);
+      map.flyTo(informationGeolocObject.latlng, map.getZoom());
+      const radius = informationGeolocObject.accuracy;
+      const circle = L.circle(informationGeolocObject.latlng, radius);
       circle.addTo(map);
-      setBbox(e.bounds.toBBoxString().split(","));
+      setBbox(informationGeolocObject.bounds.toBBoxString().split(","));
     });
   }, [map]);
 
@@ -74,9 +75,9 @@ function DisplayMap() {
         url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
       />
       {EVStationcoordinates.map((item) => (
-        <Marker key={item.id_station} position={item.coordinates} />
+        <Marker key={item.id} position={item.geocode} />        
       ))}
-      <LocationMarker />
+      <LocationMarker/>
     </MapContainer>
   );
 }

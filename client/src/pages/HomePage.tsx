@@ -99,7 +99,7 @@ function HomePage() {
       </section>
 
       <section className="section2">
-        <div className="homecontainer2">
+        <div className="homeContenair">
           <div className="homeContent">
             <h2 className="title">Questions fréquentes</h2>
             <input type="checkbox" id="view-0" />
