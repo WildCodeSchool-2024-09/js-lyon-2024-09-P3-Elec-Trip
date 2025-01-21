@@ -3,8 +3,13 @@ CREATE TABLE user_account (
     firstname VARCHAR(50) NOT NULL,
     lastname VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL UNIQUE,
-    password VARCHAR(50) NOT NULL
+    hashed_password VARCHAR(50) NOT NULL
 );
+
+INSERT INTO user_account (id_user, firstname, lastname, email, hashed_password)
+VALUES
+(1, "Oliver", "Pepette", "oliver@pepette.com", "123456");
+
 
 CREATE TABLE station (
   id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT NOT NULL,

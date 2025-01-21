@@ -1,3 +1,4 @@
+import argon2 from "argon2";
 import type { RequestHandler } from "express";
 import accountRepository from "./accountRepository";
 
@@ -8,7 +9,7 @@ const add: RequestHandler = async (req, res, next) => {
       firstname: req.body.firstname,
       lastname: req.body.lastname,
       email: req.body.email,
-      password: req.body.password,
+      hashed_password: req.body.hashed_password,
     };
 
     const insertId = await accountRepository.create(newAccount);
@@ -17,6 +18,13 @@ const add: RequestHandler = async (req, res, next) => {
   } catch (err) {
     next(err);
   }
+};
+
+const hashingOptions = {
+  type: argon2.argon2id,
+  memoryCost: 19 * 2 ** 10,
+  timeCost: 2,
+  parallelism: 1,
 };
 
 // connexion au compte
@@ -33,6 +41,18 @@ const edit: RequestHandler = async (req, res, next) => {
     }
 
     res.status(200).json({ message: "Connexion réussie", user });
+  } catch (err) {
+    next(err);
+  }
+};
+
+const hashPassword: RequestHandler = async (req, res, next) => {
+  try {
+    const password = req.body.password;
+    const hashedPassword = argon2.hash(password, hashingOptions);
+    req.body.hashedPassword = hashedPassword;
+    req.body.password = undefined;
+    next();
   } catch (err) {
     next(err);
   }

@@ -7,12 +7,12 @@ type Account = {
   firstname: string;
   lastname: string;
   email: string;
-  password: string;
+  hashed_password: string;
 };
 
 type user = {
   email: string;
-  password: string;
+  hashed_password: string;
 };
 const fakeuser = {
   email: "oliver@pepette.com",
@@ -24,7 +24,12 @@ class accountRepository {
   async create(account: Omit<Account, "id">) {
     const [result] = await databaseClient.query<Result>(
       "INSERT INTO user_account (firstname, lastname, email, password) VALUES (?, ?, ?, ?)",
-      [account.firstname, account.lastname, account.email, account.password],
+      [
+        account.firstname,
+        account.lastname,
+        account.email,
+        account.hashed_password,
+      ],
     );
 
     return result.insertId;
@@ -32,11 +37,11 @@ class accountRepository {
   // Connexion au compte
   async findByEmailAndPassword(
     email: string,
-    password: string,
+    hashed_password: string,
   ): Promise<user | null> {
     const [result] = await databaseClient.query<Result>(
       "SELECT * FROM user_account WHERE email = ? AND password = ?",
-      [email, password],
+      [email, hashed_password],
     );
     console.info(result);
 
