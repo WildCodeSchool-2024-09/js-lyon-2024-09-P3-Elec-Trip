@@ -66,53 +66,40 @@
   cursor: pointer;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 }
-.accountLabel {
-  background: #ffffff00;
-  border: 3px solid #fff;
-  border-radius: 3rem;
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: 300;
-  width: 100%;
-  margin: 0;
-  padding: 1rem;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
-  background-color: rgba(0, 0, 0, 0);
+.accountForm {
+  /* width: 100%; */
   display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
   gap: 10px;
+}
+.accountLabel {
+  color: #fff;
+  display: flex;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: center;
   cursor: text;
-  outline: none;
 }
-
-label:hover {
-  background: #00000000;
-}
-input {
-  display: contents;
-}
-
 .accountInput {
-  margin: 0;
-  padding: 10px;
-  border: 1px solid #fff;
-  border-radius: 3rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 1em;
+  padding: 16px 24px;
+  border: 3px solid #fff;
+  border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 }
 .accountInput::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
 .accountInput:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
-}
-
-.iconCenter {
-  display: flex;
-  justify-content: center;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.25);
 }
 
 /*---- Tablet ----*/

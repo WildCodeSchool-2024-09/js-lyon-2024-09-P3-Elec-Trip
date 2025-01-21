@@ -5,9 +5,9 @@ import NavHome from "../components/Nav/NavHome";
 import "../App.css";
 import "./Account.css";
 
-import IconMail from "../images/icon_log_mail.png";
-import IconPassword from "../images/icon_log_password.png";
-import IconUser from "../images/icon_log_user.png";
+// import IconMail from "../images/icon_log_mail.png";
+// import IconPassword from "../images/icon_log_password.png";
+// import IconUser from "../images/icon_log_user.png";
 
 function Account() {
   const [isLogin, setIsLogin] = useState(false);
@@ -39,14 +39,13 @@ function Account() {
             </button>
           </article>
           {isLogin ? (
-            <>
+            <form className="accountForm">
               <h1>Connectez-vous à votre compte</h1>
               <label className="accountLabel" htmlFor="email">
-                <img
+                {/* <img
                   src={IconMail}
                   alt="icone email renseigner son adresse mail"
-                />
-                Email
+                /> */}
               </label>
               <input
                 className="accountInput"
@@ -54,14 +53,14 @@ function Account() {
                 id="email"
                 name="email"
                 defaultValue={email}
+                placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               />
               <label className="accountLabel" htmlFor="password">
-                <img
+                {/* <img
                   src={IconPassword}
                   alt="icone verrou renseigner son mot de passe"
-                />
-                Mot de passe
+                /> */}
               </label>
               <input
                 className="accountInput"
@@ -69,18 +68,18 @@ function Account() {
                 id="password"
                 name="password"
                 defaultValue={password}
+                placeholder="Mot de passe"
                 onChange={(e) => setPassword(e.target.value)}
               />
               <button className="validateBtn" type="button">
                 Se connecter
               </button>
-            </>
+            </form>
           ) : (
-            <>
+            <form className="accountForm">
               <h1>Créez votre compte</h1>
-              <label className="accountLabel" htmlFor="firstname">
-                <img src={IconUser} alt="icone utilisateur" />
-                Prénom
+              <label className="accountLabel" htmlFor="lastname">
+                {/* <img src={IconUser} alt="icone utilisateur" /> */}
               </label>
               <input
                 className="accountInput"
@@ -88,11 +87,11 @@ function Account() {
                 id="firstname"
                 name="firstname"
                 defaultValue={firstname}
+                placeholder="Prénom"
                 onChange={(e) => setFirstname(e.target.value)}
               />
               <label className="accountLabel" htmlFor="lastname">
-                <img src={IconUser} alt="icone utilisateur" />
-                Nom
+                {/* <img src={IconUser} alt="icone utilisateur" /> */}
               </label>
               <input
                 className="accountInput"
@@ -100,14 +99,14 @@ function Account() {
                 id="lastname"
                 name="lastname"
                 defaultValue={lastname}
+                placeholder="Nom"
                 onChange={(e) => setLastname(e.target.value)}
               />
               <label className="accountLabel" htmlFor="email">
-                <img
+                {/* <img
                   src={IconMail}
                   alt="icone email renseigner son adresse mail"
-                />
-                Email
+                /> */}
               </label>
               <input
                 className="accountInput"
@@ -115,14 +114,14 @@ function Account() {
                 id="email"
                 name="email"
                 defaultValue={email}
+                placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               />
               <label className="accountLabel" htmlFor="password">
-                <img
+                {/* <img
                   src={IconPassword}
                   alt="icone verrou renseigner son mot de passe"
-                />
-                Mot de passe
+                /> */}
               </label>
               <input
                 className="accountInput"
@@ -130,12 +129,13 @@ function Account() {
                 id="password"
                 name="password"
                 defaultValue={password}
+                placeholder="Mot de passe"
                 onChange={(e) => setPassword(e.target.value)}
               />
               <button className="validateBtn" type="button">
                 Confirmer
               </button>
-            </>
+            </form>
           )}
         </article>
       </section>
