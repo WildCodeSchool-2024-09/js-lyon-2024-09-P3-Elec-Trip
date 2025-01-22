@@ -14,10 +14,6 @@ type user = {
   email: string;
   hashed_password: string;
 };
-const fakeuser = {
-  email: "oliver@pepette.com",
-  password: "norefund",
-};
 
 class accountRepository {
   // Creation du compte
