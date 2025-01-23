@@ -13,7 +13,33 @@ type localisation = {
   type_prise: string;
 };
 
+type catchQueryParameters = { latitude: string; longitude: string };
+
 class stationLocalisationRepository {
+  async DefinePerimetersArroundUserLocation(
+    catchQueryParameters: catchQueryParameters,
+  ) {
+    const { latitude, longitude } = catchQueryParameters;
+    const equivalentOneKilometer = 0.00899; // equivalent of +1km around latitude or longitude
+    const increaseLatitudeToNorth =
+      Number.parseFloat(latitude) + equivalentOneKilometer * 10;
+    const increaseLatitudeToSouth =
+      Number.parseFloat(latitude) - equivalentOneKilometer * 10;
+    const increaseLongitudeToEast =
+      Number.parseFloat(longitude) + equivalentOneKilometer * 10;
+    const increaseLongitudeToWest =
+      Number.parseFloat(longitude) - equivalentOneKilometer * 10;
+
+    const coordinatesObject = {
+      LatitudeNorth: increaseLatitudeToNorth,
+      LatitudeSouth: increaseLatitudeToSouth,
+      longitudeEast: increaseLongitudeToEast,
+      longitudeWest: increaseLongitudeToWest,
+    };
+
+    return coordinatesObject;
+  }
+
   async createCoordinatesEntry(sqlQuerryResult: Rows) {
     //This function simply rewrite object paramter to create on entry with both(xlongitude,ylatitude).
 
@@ -21,8 +47,8 @@ class stationLocalisationRepository {
 
     while (Object.values(sqlQuerryResult)[index]) {
       Object.values(sqlQuerryResult)[index].coordinates = [
-        Object.values(sqlQuerryResult)[index].xlongitude,
         Object.values(sqlQuerryResult)[index].ylatitude,
+        Object.values(sqlQuerryResult)[index].xlongitude,
       ];
 
       Object.values(sqlQuerryResult)[index].xlongitude = undefined;
@@ -34,10 +60,21 @@ class stationLocalisationRepository {
     return sqlQuerryResult;
   }
 
-  async getStationLocalisation() {
-    const [rows] = await databaseClient.query<Rows>("select * from station");
-    await this.createCoordinatesEntry(rows);
+  async getStationLocalisation(catchQueryParameters: catchQueryParameters) {
+    const querryCoords =
+      await this.DefinePerimetersArroundUserLocation(catchQueryParameters);
 
+    const [rows] = await databaseClient.query<Rows>(
+      "SELECT * FROM station WHERE ylatitude BETWEEN ? AND ? AND xlongitude BETWEEN ? AND ? LIMIT 500",
+      [
+        querryCoords.LatitudeSouth,
+        querryCoords.LatitudeNorth,
+        querryCoords.longitudeWest,
+        querryCoords.longitudeEast,
+      ],
+    );
+
+    await this.createCoordinatesEntry(rows);
     return rows as localisation[];
   }
 }
