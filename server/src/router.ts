@@ -19,7 +19,7 @@ router.post("/api/account", accountActions.add);
 // connexion au compte
 router.put("/api/account", accountActions.edit);
 
-import localisationActions from "./modules/localisation/localisationActions";
-router.get("/EVstations", localisationActions.browse);
+import stationLocationAction from "./modules/stationLocation/stationLocationAction";
+router.get("/EVstations", stationLocationAction.browse);
 
 export default router;

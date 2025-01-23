@@ -1,30 +1,28 @@
 import type { LatLngTuple } from "leaflet";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import type { localisation } from "../../../../server/src/modules/stationLocation/stationLocationRepository";
 import "./DisplayMap.css";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+import type L from "leaflet";
 import { icon } from "./constant";
 
 type ExtendedLocalisation = Omit<localisation, "coordinates"> & {
   id: number;
-  geocode: LatLngTuple;
+  coordinates: LatLngTuple;
 };
+
+type location = [number, number];
 
 function LocationMarker() {
   const [position, setPosition] = useState<L.LatLng | null>(null);
-  const [bbox, setBbox] = useState<string[]>([]);
+
   const map = useMap();
 
   useEffect(() => {
     map.locate().on("locationfound", (informationGeolocObject) => {
       setPosition(informationGeolocObject.latlng);
       map.flyTo(informationGeolocObject.latlng, map.getZoom());
-      const radius = informationGeolocObject.accuracy;
-      const circle = L.circle(informationGeolocObject.latlng, radius);
-      circle.addTo(map);
-      setBbox(informationGeolocObject.bounds.toBBoxString().split(","));
     });
   }, [map]);
 
@@ -32,11 +30,6 @@ function LocationMarker() {
     <Marker position={position} icon={icon}>
       <Popup>
         Vous êtes ici. <br />
-        Coordonnées de la carte : <br />
-        <b>Sud-ouest lng</b>: {bbox[0]} <br />
-        <b>Sud-ouest lat</b>: {bbox[1]} <br />
-        <b>Nord-est lng</b>: {bbox[2]} <br />
-        <b>Nord-est lat</b>: {bbox[3]}
       </Popup>
     </Marker>
   );
@@ -46,28 +39,48 @@ function DisplayMap() {
   const [EVStationcoordinates, setEVStationCoordinates] = useState<
     ExtendedLocalisation[]
   >([]);
+  const [location, setLocation] = useState<location>([48.866667, 2.333333]); //load in Paris
+
+  const getCurrentLocationOfUser = useCallback((): Promise<
+    [number, number]
+  > => {
+    return new Promise((resolve, reject) => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) =>
+            resolve([position.coords.latitude, position.coords.longitude]),
+          (error) => reject(error),
+        );
+      } else {
+        reject(new Error("Geolocation is not supported by this browser."));
+      }
+    });
+  }, []);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/EVstations`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Error fetching data from API");
-        }
-        return response.json();
-      })
-      .then((data) => {
+    const returnAllStationsAroundUSer = async () => {
+      try {
+        const newLocation: [number, number] = await getCurrentLocationOfUser();
+        setLocation(newLocation);
+
+        const response = await fetch(
+          `${import.meta.env.VITE_API_URL}/EVstations/?latitude=${newLocation[0]}&longitude=${newLocation[1]}`,
+        );
+        const data = await response.json();
         setEVStationCoordinates(data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
+      } catch (error) {
+        console.error("Error fetching location or data:", error);
+      }
+    };
+
+    returnAllStationsAroundUSer();
+  }, [getCurrentLocationOfUser]);
 
   return (
     <MapContainer
       className="map"
-      center={[48.866667, 2.333333]}
-      zoom={15}
+      center={location} // Load map to Paris
+      zoom={12}
       scrollWheelZoom={true}
     >
       <TileLayer
@@ -75,7 +88,7 @@ function DisplayMap() {
         url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
       />
       {EVStationcoordinates.map((item) => (
-        <Marker key={item.id} position={item.geocode} />
+        <Marker key={item.id} position={item.coordinates} />
       ))}
       <LocationMarker />
     </MapContainer>
