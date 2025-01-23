@@ -82,9 +82,7 @@ function Account() {
                   onChange={handleChangeForm}
                 />
               </label>
-              <button className="validateBtn" type="submit">
-                Se connecter
-              </button>
+              <input type="submit" />
             </form>
           ) : (
             // >> création de compte <<
@@ -125,11 +123,8 @@ function Account() {
                   placeholder="Mot de passe"
                   onChange={handleChangeForm}
                 />
-                <input className="validateBtn" type="submit" />
+                <input type="submit" />
               </label>
-              {/* <button className="validateBtn" type="submit">
-                confirmer
-              </button> */}
             </form>
           )}
         </article>
