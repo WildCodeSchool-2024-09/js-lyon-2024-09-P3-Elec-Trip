@@ -5,10 +5,10 @@ import accountRepository from "./accountRepository";
 const add: RequestHandler = async (req, res, next) => {
   try {
     const newAccount = {
-      firstname: req.body.firstname,
-      lastname: req.body.lastname,
-      email: req.body.email,
-      password: req.body.password,
+      firstname: req.body.accountForm.firstname,
+      lastname: req.body.accountForm.lastname,
+      email: req.body.accountForm.email,
+      password: req.body.accountForm.password,
     };
 
     const insertId = await accountRepository.create(newAccount);
