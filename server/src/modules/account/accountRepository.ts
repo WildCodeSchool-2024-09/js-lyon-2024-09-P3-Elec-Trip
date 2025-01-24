@@ -16,7 +16,6 @@ type user = {
 };
 
 class accountRepository {
-  // Creation du compte
   async create(account: Omit<Account, "id">) {
     const [result] = await databaseClient.query<Result>(
       "INSERT INTO user_account (firstname, lastname, email, password) VALUES (?, ?, ?, ?)",
@@ -25,14 +24,12 @@ class accountRepository {
 
     return result.insertId;
   }
-  // Connexion au compte
-  async findByEmailAndPassword(
-    email: string,
-    password: string,
-  ): Promise<user | null> {
+
+  //pour se connecter
+  async findByEmailAndPassword(email: string): Promise<user | null> {
     const [result] = await databaseClient.query<Result>(
-      "SELECT * FROM user_account WHERE email = ? AND password = ?",
-      [email, password],
+      "SELECT * FROM user_account WHERE email = ?",
+      [email],
     );
     console.info(result);
 
