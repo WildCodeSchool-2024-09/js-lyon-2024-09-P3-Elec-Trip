@@ -26,12 +26,12 @@ function Account() {
     // console.info("Form changed:", { [e.target.name]: e.target.value });
   };
 
-  // >> creation de compte POST <<
+  // >> creation de compte > POST <<
   const handleSubmitCreate = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.info("Creating account with:", accountForm);
 
-    fetch(`${import.meta.env.VITE_API_URL}/api/account`, {
+    fetch(`${import.meta.env.VITE_API_URL}/api/register`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(accountForm),
@@ -44,13 +44,13 @@ function Account() {
       .catch((error) => console.error("Erreur création :", error));
   };
 
-  // >> connexion au compte PUT <<
+  // >> connexion au compte > POST <<
   const handleSubmitLogin = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.info("Logging in with:", accountForm);
 
-    fetch(`${import.meta.env.VITE_API_URL}/api/account`, {
-      method: "put",
+    fetch(`${import.meta.env.VITE_API_URL}/api/login`, {
+      method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ accountForm }),
       // })

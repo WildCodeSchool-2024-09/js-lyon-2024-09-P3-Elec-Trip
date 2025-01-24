@@ -19,6 +19,7 @@ import accountActions from "./modules/account/accountActions";
 // router.post("/api/register", accountActions.add);
 // connexion au compte
 router.post("/api/login", authActions.login);
+// router.post("/api/register", accountActions.add);
 
 import stationLocationAction from "./modules/stationLocation/stationLocationAction";
 router.get("/EVstations", stationLocationAction.browse);
