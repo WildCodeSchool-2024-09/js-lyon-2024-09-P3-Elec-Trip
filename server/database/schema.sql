@@ -3,7 +3,7 @@ CREATE TABLE user_account (
     firstname VARCHAR(64) NOT NULL,
     lastname VARCHAR(64) NOT NULL,
     email VARCHAR(128) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL
+    hashed_password VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE station (
