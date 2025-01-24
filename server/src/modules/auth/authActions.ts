@@ -18,16 +18,16 @@ export const hashingOptions = {
 
 const login: RequestHandler = async (req, res, next): Promise<void> => {
   try {
-    const { email, password } = req.body.accountForm;
+    const { email, password } = req.body;
 
-    const user = await accountRepository.findByEmailAndPassword(email);
+    const user = await accountRepository.findByEmail(email);
 
     if (!user) {
       res.status(401).json({ error: "Identifiants incorrects" });
       return;
     }
 
-    const isPasswordValid = await argon2.verify(user.password, password);
+    const isPasswordValid = await argon2.verify(user.hashed_password, password);
 
     if (!isPasswordValid) {
       res.status(401).json({ error: "Identifiants incorrects" });
@@ -58,7 +58,9 @@ const hashPassword: RequestHandler = async (req, res, next) => {
 
     const hashedPassword = await argon2.hash(password, hashingOptions);
 
-    req.body.password = hashedPassword;
+    req.body.hashed_password = hashedPassword;
+
+    req.body.password = undefined;
 
     next();
   } catch (err) {

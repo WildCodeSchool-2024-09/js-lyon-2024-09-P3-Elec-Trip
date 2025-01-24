@@ -7,10 +7,10 @@ import accountRepository from "./accountRepository";
 const add: RequestHandler = async (req, res, next) => {
   try {
     const newAccount = {
-      firstname: req.body.accountForm.firstname,
-      lastname: req.body.accountForm.lastname,
-      email: req.body.accountForm.email,
-      password: req.body.accountForm.password,
+      firstname: req.body.firstname,
+      lastname: req.body.lastname,
+      email: req.body.email,
+      hashed_password: req.body.hashed_password,
     };
 
     const insertId = await accountRepository.create(newAccount);
@@ -26,4 +26,4 @@ const edit: RequestHandler = async (req, res, next) => {
   // code
 };
 
-export default { edit };
+export default { add, edit };
