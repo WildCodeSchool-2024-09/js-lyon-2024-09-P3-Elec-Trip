@@ -23,27 +23,42 @@ function Account() {
 
   const handleChangeForm = (e: React.ChangeEvent<HTMLInputElement>) => {
     setAccountForm({ ...accountForm, [e.target.name]: e.target.value });
+    // console.info("Form changed:", { [e.target.name]: e.target.value });
   };
 
   // >> creation de compte > POST <<
   const handleSubmitCreate = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.info("Creating account with:", accountForm);
 
     fetch(`${import.meta.env.VITE_API_URL}/api/register`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ accountForm }),
-    });
+      body: JSON.stringify(accountForm),
+    })
+      .then((response) => {
+        if (!response.ok) throw new Error("Erreur serveur");
+        return response.json();
+      })
+      .then((data) => console.log("Compte créé :", data))
+      .catch((error) => console.error("Erreur création :", error));
   };
 
   // >> connexion au compte > POST <<
   const handleSubmitLogin = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.info("Logging in with:", accountForm);
 
     fetch(`${import.meta.env.VITE_API_URL}/api/login`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ accountForm }),
+      // })
+      //   .then((response) => {
+      //     console.info("Login response:", response);
+      //   })
+      //   .catch((error) => {
+      //     console.error("Login error:", error);
     });
   };
 

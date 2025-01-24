@@ -1,4 +1,6 @@
+import argon2 from "argon2";
 import type { RequestHandler } from "express";
+import jwt from "jsonwebtoken";
 import accountRepository from "./accountRepository";
 
 // creation de compte
@@ -21,21 +23,7 @@ const add: RequestHandler = async (req, res, next) => {
 
 // connexion au compte
 const edit: RequestHandler = async (req, res, next) => {
-  try {
-    const { email, password } = req.body;
-    const user = await accountRepository.findByEmailAndPassword(
-      email,
-      password,
-    );
-
-    if (!user) {
-      res.status(401).json({ error: "Identifiants incorrects" });
-    }
-
-    res.status(200).json({ message: "Connexion réussie", user });
-  } catch (err) {
-    next(err);
-  }
+  // code
 };
 
-export default { add, edit };
+export default { edit };
