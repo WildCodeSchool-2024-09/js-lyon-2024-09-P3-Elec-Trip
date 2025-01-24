@@ -14,10 +14,8 @@ router.get("/api/items/:id", itemActions.read);
 router.post("/api/items", itemActions.add);
 
 import accountActions from "./modules/account/accountActions";
-// creation de compte
-router.post("/api/account", accountActions.add);
-// connexion au compte
-router.put("/api/account", accountActions.edit);
+router.post("/api/register", accountActions.add);
+// router.post("/api/login", accountActions.add);
 
 import localisationActions from "./modules/localisation/localisationActions";
 router.get("/EVstations", localisationActions.browse);
