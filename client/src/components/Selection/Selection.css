@@ -1,15 +1,19 @@
 .selection-container {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
-  padding-left: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
+  padding-bottom: 1rem;
+  width: 100%;
+  pointer-events: auto;
 }
 
 .adress {
-  margin-bottom: 15px;
-  bottom: 20px;
+  margin-bottom: 1rem;
+  background: white;
+  border-radius: 8px;
+  border-left: 8px solid #00aadc;
+  box-shadow: 0 5px 20px rgba(46, 51, 51, 0.2);
 }
 
 .adress h2 {
@@ -36,17 +40,18 @@
 .bloc-info {
   display: flex;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 80px;
+  background: white;
+  border-radius: 8px;
+  border-left: 8px solid #00aadc;
+  box-shadow: 0 5px 20px rgba(46, 51, 51, 0.2);
 }
 
 .car {
-  position: relative;
-  right: 35px;
+  padding-left: 2px;
 }
 
 .car img {
-  width: 50vw;
+  width: 30vw;
 }
 
 .distance,
@@ -54,4 +59,10 @@
 .time {
   padding-bottom: 10px;
   padding-left: 20px;
+}
+
+@media (min-width: 900px) {
+  .car img {
+    width: 15vw;
+  }
 }

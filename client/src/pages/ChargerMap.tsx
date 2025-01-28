@@ -4,6 +4,7 @@ import DisplayMap from "../components/Map/DisplayMap";
 import Nav from "../components/Nav/Nav";
 import Selection from "../components/Selection/Selection";
 
+import "./ChargerMap.css";
 import "../App.css";
 
 function ChargerMap() {
@@ -13,11 +14,19 @@ function ChargerMap() {
         <Nav />
       </nav>
 
-      <main>
-        <DisplayMap />
-        <Banner />
-        <Selection />
-        <Footer />
+      <main className="appContainer">
+        <section className="mapContainer">
+          <DisplayMap />
+        </section>
+
+        <section className="mapOptions">
+          <div className="WrappBannerAndSelection">
+            <Banner />
+            <Selection />
+          </div>
+
+          <Footer />
+        </section>
       </main>
     </>
   );
