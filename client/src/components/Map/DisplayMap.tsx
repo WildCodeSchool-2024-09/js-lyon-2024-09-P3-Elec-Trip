@@ -77,21 +77,23 @@ function DisplayMap() {
   }, [getCurrentLocationOfUser]);
 
   return (
-    <MapContainer
-      className="map"
-      center={location} // Load map to Paris
-      zoom={12}
-      scrollWheelZoom={true}
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
-      />
-      {EVStationcoordinates.map((item) => (
-        <Marker key={item.id} position={item.coordinates} />
-      ))}
-      <LocationMarker />
-    </MapContainer>
+    <section>
+      <MapContainer
+        className="map"
+        center={location} // Load map to Paris
+        zoom={12}
+        scrollWheelZoom={true}
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
+        />
+        {EVStationcoordinates.map((item) => (
+          <Marker key={item.id} position={item.coordinates} />
+        ))}
+        <LocationMarker />
+      </MapContainer>
+    </section>
   );
 }
 
