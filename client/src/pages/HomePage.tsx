@@ -43,6 +43,7 @@ function HomePage() {
           <img className="imgHome" src={ImgCharger} alt="cliqué d'une borne" />
         </div>
       </section>
+
       <section className="section2">
         <div className="homeContenair2">
           <div className="homeInfo2">
@@ -66,6 +67,7 @@ function HomePage() {
           <img className="imgHome" src={ImgCar} alt="cliché d'une voiture" />
         </div>
       </section>
+
       <section className="section1">
         <div className="homeContenair">
           <div className="homeInfo">
@@ -95,7 +97,7 @@ function HomePage() {
           />
         </div>
       </section>
-      {/* Nouvelle partie questions */}
+
       <section className="section2">
         <div className="homeContenair">
           <div className="homeContent">
@@ -171,6 +173,7 @@ function HomePage() {
           </div>
         </div>
       </section>
+
       <Footer />
     </>
   );

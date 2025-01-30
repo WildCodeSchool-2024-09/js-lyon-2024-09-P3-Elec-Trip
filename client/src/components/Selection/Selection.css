@@ -1,43 +1,41 @@
 .selection-container {
+  width: 300px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-  padding-bottom: 1rem;
-  width: 100%;
   pointer-events: auto;
 }
-
 .adress {
   margin-bottom: 1rem;
+  padding: 20px;
   background: white;
   border-radius: 8px;
   border-left: 8px solid #00aadc;
   box-shadow: 0 5px 20px rgba(46, 51, 51, 0.2);
 }
-
 .adress h2 {
-  font-size: 1.2rem;
+  font-family: "Nexa", Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  color: #2e3333;
   margin: 0;
 }
-
 .adress p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   margin: 2px 0;
-  color: #666;
-  font-size: 0.9rem;
+  color: #353535;
+  font-size: 0.85rem;
 }
-
 .details p {
-  color: #666;
-  font-size: 0.9rem;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #353535;
+  font-size: 1rem;
 }
-
 .statut-available {
   color: #008000;
   font-weight: bold;
 }
-
 .bloc-info {
+  margin-bottom: 20px;
+  padding: 20px;
   display: flex;
   align-items: center;
   background: white;
@@ -45,13 +43,11 @@
   border-left: 8px solid #00aadc;
   box-shadow: 0 5px 20px rgba(46, 51, 51, 0.2);
 }
-
 .car {
   padding-left: 2px;
 }
-
 .car img {
-  width: 30vw;
+  width: 120px;
 }
 
 .distance,
@@ -62,7 +58,30 @@
 }
 
 @media (min-width: 900px) {
+  bloc-info {
+    margin-bottom: 0;
+  }
+  .selection-container {
+    width: 400px;
+  }
   .car img {
-    width: 15vw;
+    width: 175px;
+  }
+  .adress h2 {
+    font-family: "Nexa", Arial, Helvetica, sans-serif;
+    font-size: 1.35rem;
+    color: #2e3333;
+    margin: 0;
+  }
+  .adress p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    margin: 2px 0;
+    color: #353535;
+    font-size: 1rem;
+  }
+  .details p {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    color: #353535;
+    font-size: 1.10rem;
   }
 }

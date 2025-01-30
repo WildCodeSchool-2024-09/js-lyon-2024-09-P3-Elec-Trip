@@ -23,7 +23,8 @@
 }
 
 .WrappBannerAndSelection {
-  width: 80%;
+  /* width: 80px; */
+  margin: 0;
 }
 
 @media (min-width: 900px) {
@@ -34,6 +35,7 @@
   }
 
   .WrappBannerAndSelection {
-    width: 35%;
+    /* width: 400px; */
+    margin: 0;
   }
 }

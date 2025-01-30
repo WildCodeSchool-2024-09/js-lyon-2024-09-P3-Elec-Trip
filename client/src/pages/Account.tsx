@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import { useAuth } from "../contexts/AuthContext";
 
 import NavHome from "../components/Nav/NavHome";
 
@@ -6,6 +9,9 @@ import "../App.css";
 import "./Account.css";
 
 function Account() {
+  const { login } = useAuth(); // utilisation du custom Hook
+  const navigate = useNavigate(); // utilisation de la redirection
+
   const [isLogin, setIsLogin] = useState(false);
   const handleLoginClick = () => {
     setIsLogin(true);
@@ -28,36 +34,42 @@ function Account() {
   // >> creation de compte > POST <<
   const handleSubmitCreate = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.info("Creating account with:", accountForm);
 
     fetch(`${import.meta.env.VITE_API_URL}/api/register`, {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(accountForm),
-    })
-      .then((response) => {
-        if (!response.ok) throw new Error("Erreur serveur");
-        return response.json();
-      })
-      .then((data) => console.log("Compte créé :", data))
-      .catch((error) => console.error("Erreur création :", error));
+    });
   };
 
   // >> connexion au compte > POST <<
-  const handleSubmitLogin = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmitLogin: React.FormEventHandler<HTMLFormElement> = async (
+    event,
+  ) => {
+    event.preventDefault();
 
-    fetch(`${import.meta.env.VITE_API_URL}/api/login`, {
-      method: "post",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(accountForm),
-    })
-      .then((response) => {
-        console.info("Login response:", response);
-      })
-      .catch((error) => {
-        console.error("Login error:", error);
-      });
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/login`,
+        {
+          method: "post",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(accountForm),
+        },
+      );
+
+      if (response.status === 200) {
+        const user = await response.json();
+        login(user);
+        navigate("/"); // Redirection sur la homepage en cas de succès
+      } else {
+        toast.error("Une erreur s'est produite, veuillez réessayer");
+        console.info(response);
+      }
+    } catch (err) {
+      console.error(err);
+      toast.error("Une erreur inattendue est survenue.");
+    }
   };
 
   return (
@@ -67,37 +79,13 @@ function Account() {
         <article className="accountInfos">
           <article className="accountButton">
             <button type="button" onClick={handleSignupClick}>
-              Inscription
+              Connexion
             </button>
             <button type="button" onClick={handleLoginClick}>
-              Connexion
+              Inscription
             </button>
           </article>
           {isLogin ? (
-            // >> connexion au compte <<
-            <form className="accountForm" onSubmit={handleSubmitLogin}>
-              <h1>Connectez-vous à votre compte</h1>
-              <label htmlFor="email">
-                <input
-                  type="text"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  onChange={handleChangeForm}
-                />
-              </label>
-              <label htmlFor="password">
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Mot de passe"
-                  onChange={handleChangeForm}
-                />
-              </label>
-              <input type="submit" />
-            </form>
-          ) : (
             // >> création de compte <<
             <form className="accountForm" onSubmit={handleSubmitCreate}>
               <h1>Créez votre compte</h1>
@@ -138,6 +126,30 @@ function Account() {
                 />
                 <input type="submit" />
               </label>
+            </form>
+          ) : (
+            // >> connexion au compte <<
+            <form className="accountForm" onSubmit={handleSubmitLogin}>
+              <h1>Connectez-vous à votre compte</h1>
+              <label htmlFor="email">
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  onChange={handleChangeForm}
+                />
+              </label>
+              <label htmlFor="password">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Mot de passe"
+                  onChange={handleChangeForm}
+                />
+              </label>
+              <input type="submit" />
             </form>
           )}
         </article>
