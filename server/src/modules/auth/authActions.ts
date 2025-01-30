@@ -45,6 +45,8 @@ const login: RequestHandler = async (req, res, next): Promise<void> => {
       token,
       user: {
         email: user.email,
+        firstname: user.firstname,
+        lastname: user.lastname,
       },
     });
   } catch (err) {

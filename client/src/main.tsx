@@ -2,6 +2,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { AuthProvider } from "./contexts/AuthContext";
 
 /* ************************************************************************* */
 
@@ -12,6 +13,7 @@ import AnyQuestions from "./pages/AnyQuestions";
 import CarMap from "./pages/CarMap";
 import ChargerMap from "./pages/ChargerMap";
 import HomePage from "./pages/HomePage";
+import { ToastContainer } from "react-toastify";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -62,7 +64,22 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    {/* Avec AuthProvider je fournis le context à l'ensemble de ce qui est encapsulé */}
+    <AuthProvider>
+      <RouterProvider router={router} />
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+    </AuthProvider>
   </StrictMode>,
 );
 

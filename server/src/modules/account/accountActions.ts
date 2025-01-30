@@ -23,7 +23,18 @@ const add: RequestHandler = async (req, res, next) => {
 
 // connexion au compte
 const edit: RequestHandler = async (req, res, next) => {
-  // code
+  try {
+    const { email } = req.body;
+    const user = await accountRepository.findByEmail(email);
+
+    if (!user) {
+      res.status(401).json({ error: "Identifiants incorrects" });
+    }
+
+    res.status(200).json({ message: "Connexion réussie", user });
+  } catch (err) {
+    next(err);
+  }
 };
 
 export default { add, edit };
