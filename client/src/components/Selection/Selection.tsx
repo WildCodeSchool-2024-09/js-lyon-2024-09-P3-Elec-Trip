@@ -1,5 +1,5 @@
 import "./Selection.css";
-import CarImage from "../../images/Borne_recharge_illustration.png";
+import borne from "../../images/Borne_recharge_illustration.png";
 
 function Selection() {
   return (
@@ -11,9 +11,9 @@ function Selection() {
       </section>
 
       <section className="bloc-info">
-        <section className="car">
-          <img src={CarImage} alt="Voiture electrique" />
-        </section>
+        <div className="car">
+          <img src={borne} alt="Station de recharge" />
+        </div>
 
         <div className="details">
           <section className="distance">

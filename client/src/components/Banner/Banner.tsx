@@ -5,11 +5,17 @@ function banner() {
   return (
     <>
       <section className="banner">
-        <img src={Wire} alt="Wire" className="Wire" />
+        <img src={Wire} alt="Wire logo" className="WireImage" />
+
         <p> Réserver</p>
-        <p>Valider</p>
+        <label className="switch">
+          <input type="checkbox" />
+          <span className="sliderRound" />
+        </label>
+        <button className="ButtonReserv" type="submit">
+          Valider
+        </button>
       </section>
-      ;
     </>
   );
 }
