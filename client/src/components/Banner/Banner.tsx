@@ -6,15 +6,16 @@ function banner() {
     <>
       <section className="banner">
         <img src={Wire} alt="Wire logo" className="WireImage" />
-
-        <p> Réserver</p>
-        <label className="switch">
-          <input type="checkbox" />
-          <span className="sliderRound" />
-        </label>
-        <button className="ButtonReserv" type="submit">
-          Valider
-        </button>
+        <div className="wrapReservBtn">
+          <p>Réserver</p>
+          <label className="switch">
+            <input type="checkbox" />
+            <span className="sliderRound" />
+          </label>
+          <button className="ButtonReserv" type="submit">
+            Valider
+          </button>
+        </div>
       </section>
     </>
   );

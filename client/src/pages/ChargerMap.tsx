@@ -10,10 +10,7 @@ import "../App.css";
 function ChargerMap() {
   return (
     <>
-      <nav>
-        <Nav />
-      </nav>
-
+      <Nav />
       <main className="appContainer">
         <section className="mapContainer">
           <DisplayMap />
@@ -24,7 +21,6 @@ function ChargerMap() {
             <Banner />
             <Selection />
           </div>
-
           <Footer />
         </section>
       </main>
