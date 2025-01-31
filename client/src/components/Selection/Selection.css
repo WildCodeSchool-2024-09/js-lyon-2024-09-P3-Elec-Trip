@@ -1,20 +1,31 @@
+/*---- Mobile ----*/
 .selection-container {
-  width: 300px;
+  width: 332px;
   display: flex;
   flex-direction: column;
   pointer-events: auto;
 }
 .adress {
-  margin-bottom: 1rem;
-  padding: 20px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
   background: white;
-  border-radius: 8px;
-  border-left: 8px solid #00aadc;
+  border-radius: 16px;
+  border-left: 4px solid #00aadc;
+  box-shadow: 0 5px 20px rgba(46, 51, 51, 0.2);
+}
+.bloc-info {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 16px;
+  border-left: 4px solid #00aadc;
   box-shadow: 0 5px 20px rgba(46, 51, 51, 0.2);
 }
 .adress h2 {
   font-family: "Nexa", Arial, Helvetica, sans-serif;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: #2e3333;
   margin: 0;
 }
@@ -22,42 +33,32 @@
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   margin: 2px 0;
   color: #353535;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 .details p {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #353535;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 .statut-available {
-  color: #008000;
+  color: #00a323;
   font-weight: bold;
-}
-.bloc-info {
-  margin-bottom: 20px;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  background: white;
-  border-radius: 8px;
-  border-left: 8px solid #00aadc;
-  box-shadow: 0 5px 20px rgba(46, 51, 51, 0.2);
 }
 .car {
   padding-left: 2px;
 }
 .car img {
-  width: 120px;
+  width: 150px;
 }
-
 .distance,
 .availability,
 .time {
-  padding-bottom: 10px;
-  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-left: 10px;
 }
 
-@media (min-width: 900px) {
+/*---- Desktop ----*/
+@media (min-width: 1100px) {
   bloc-info {
     margin-bottom: 0;
   }
@@ -68,19 +69,16 @@
     width: 175px;
   }
   .adress h2 {
-    font-family: "Nexa", Arial, Helvetica, sans-serif;
     font-size: 1.35rem;
     color: #2e3333;
     margin: 0;
   }
   .adress p {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     margin: 2px 0;
     color: #353535;
     font-size: 1rem;
   }
   .details p {
-    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     color: #353535;
     font-size: 1.10rem;
   }

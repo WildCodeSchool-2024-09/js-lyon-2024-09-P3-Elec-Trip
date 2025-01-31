@@ -30,7 +30,7 @@ interface AuthContextValue {
 // Initialiser le contexte avec des valeurs par défaut
 const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 
-// Fournisseur du contexte
+// Fournisseur du contexte d'authentification
 export function AuthProvider({ children }: ContextProviderProps) {
   const [auth, setAuth] = useState(null as Auth | null);
 

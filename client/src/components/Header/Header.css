@@ -27,6 +27,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 40px;
+  margin: 0 auto;
 }
 .headerInfos {
   margin: 30px;

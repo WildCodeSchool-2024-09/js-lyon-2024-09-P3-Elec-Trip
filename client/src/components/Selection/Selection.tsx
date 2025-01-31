@@ -1,18 +1,17 @@
 import "./Selection.css";
-import borne from "../../images/Borne_recharge_illustration.png";
+import Charger from "../../images/Borne_recharge_illustration.png";
 
 function Selection() {
   return (
     <div className="selection-container">
       <section className="adress">
         <h2>Place des archives</h2>
-        <p>18 rue Jean Jaures</p>
-        <p>69002 Lyon</p>
+        <p>18 rue Jean Jaures 69002 Lyon</p>
       </section>
 
       <section className="bloc-info">
         <div className="car">
-          <img src={borne} alt="Station de recharge" />
+          <img src={Charger} alt="Station de recharge" />
         </div>
 
         <div className="details">
