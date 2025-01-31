@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 
 import Footer from "../components/Footerhome/Footerhome";
-// import "../components/Footerhome/Footerhome.tsx";
 import Header from "../components/Header/Header";
 
 import "../App.css";
 import "./HomePage.css";
-import "../components/Footerhome/Footerhome.css";
 
 import Buttonplus from "../images/btn_+.png";
 import ImgAbout from "../images/img_about.jpg";
@@ -101,7 +99,7 @@ function HomePage() {
       <section className="section2">
         <div className="homeContenair">
           <div className="homeContent">
-            <h2 className="title">Questions fréquentes</h2>
+            <h2>Questions fréquentes</h2>
             <details className="homeDetails">
               <summary className="homeSummary">
                 Puis-je bénéficier des services de localisation de bornes pour

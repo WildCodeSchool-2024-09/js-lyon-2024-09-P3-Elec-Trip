@@ -64,7 +64,6 @@ function Account() {
         navigate("/"); // Redirection sur la homepage en cas de succès
       } else {
         toast.error("Une erreur s'est produite, veuillez réessayer");
-        console.info(response);
       }
     } catch (err) {
       console.error(err);

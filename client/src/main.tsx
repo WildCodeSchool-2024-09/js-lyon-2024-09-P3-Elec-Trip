@@ -2,6 +2,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
 import { AuthProvider } from "./contexts/AuthContext";
 
 /* ************************************************************************* */
@@ -13,7 +14,6 @@ import AnyQuestions from "./pages/AnyQuestions";
 import CarMap from "./pages/CarMap";
 import ChargerMap from "./pages/ChargerMap";
 import HomePage from "./pages/HomePage";
-import { ToastContainer } from "react-toastify";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
