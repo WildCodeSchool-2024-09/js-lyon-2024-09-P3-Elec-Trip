@@ -34,6 +34,10 @@ const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 export function AuthProvider({ children }: ContextProviderProps) {
   const [auth, setAuth] = useState(null as Auth | null);
 
+  // Création de compte
+  // Rien ici tout se passe dans Account.tsx
+
+  // Connexion au compte
   const login = useCallback(
     (user: Auth) => {
       if (auth !== null) {
@@ -45,6 +49,7 @@ export function AuthProvider({ children }: ContextProviderProps) {
     },
     [auth],
   );
+  // Déconnexion
   const logout = useCallback(() => {
     if (auth !== null) {
       toast.info(`À bientôt ${auth.user.firstname}`);

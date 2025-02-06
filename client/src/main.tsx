@@ -10,7 +10,7 @@ import { AuthProvider } from "./contexts/AuthContext";
 // Import the main app component
 
 import Account from "./pages/Account";
-import AnyQuestions from "./pages/AnyQuestions";
+import CGU from "./pages/CGU";
 import CarMap from "./pages/CarMap";
 import ChargerMap from "./pages/ChargerMap";
 import HomePage from "./pages/HomePage";
@@ -28,7 +28,7 @@ import HomePage from "./pages/HomePage";
 const router = createBrowserRouter([
   {
     path: "/", // The root path
-    element: <HomePage />, // Renders the App component for the home page
+    element: <HomePage />, // Renders the HomePage component for the homepage
   },
   {
     path: "/trouver_une_borne",
@@ -43,8 +43,8 @@ const router = createBrowserRouter([
     element: <Account />,
   },
   {
-    path: "/questions",
-    element: <AnyQuestions />,
+    path: "/Conditions_Generales_d'Utilisation",
+    element: <CGU />,
   },
   // Try adding a new route! For example, "/about" with an About component
 ]);

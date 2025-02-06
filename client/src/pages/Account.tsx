@@ -10,6 +10,7 @@ import "./Account.css";
 
 function Account() {
   const { login } = useAuth(); // utilisation du custom Hook
+
   const navigate = useNavigate(); // utilisation de la redirection
 
   const [isLogin, setIsLogin] = useState(false);
@@ -24,7 +25,7 @@ function Account() {
     firstname: "",
     lastname: "",
     email: "",
-    password: "",
+    hashed_password: "",
   });
 
   const handleChangeForm = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,14 +33,30 @@ function Account() {
   };
 
   // >> creation de compte > POST <<
-  const handleSubmitCreate = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmitCreate: React.FormEventHandler<HTMLFormElement> = async (
+    event,
+  ) => {
+    event.preventDefault();
 
-    fetch(`${import.meta.env.VITE_API_URL}/api/register`, {
-      method: "post",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(accountForm),
-    });
+    try {
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/register`,
+        {
+          method: "post",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(accountForm),
+        },
+      );
+
+      if (response.status === 201) {
+        toast.info("Votre compte à bien été crée ! 😊");
+      } else {
+        toast.error("Une erreur s'est produite, veuillez réessayer");
+      }
+    } catch (err) {
+      console.error(err);
+      toast.error("Une erreur inattendue est survenue.");
+    }
   };
 
   // >> connexion au compte > POST <<
