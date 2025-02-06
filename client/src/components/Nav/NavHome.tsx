@@ -59,9 +59,6 @@ function NavHome() {
                 <Link to="/trouver_une_voiture" className="linkBurger">
                   Trouver une voiture
                 </Link>
-                <Link to="/questions" className="linkBurger">
-                  Des questions?
-                </Link>
                 <Link to="/mon_compte" className="linkButton">
                   <button type="button">S'inscrire</button>
                 </Link>
@@ -79,9 +76,6 @@ function NavHome() {
           </Link>
           <Link to="/trouver_une_voiture" className="link">
             Trouver une voiture
-          </Link>
-          <Link to="/questions" className="link">
-            Des questions?
           </Link>
           <Link to="/mon_compte" className="linkButton">
             <button type="button">S'inscrire</button>

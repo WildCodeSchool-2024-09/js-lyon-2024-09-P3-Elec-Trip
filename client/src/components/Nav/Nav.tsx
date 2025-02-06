@@ -51,18 +51,19 @@ function Nav() {
             {isMenuOpen && (
               <div className="menuBubble">
                 <ul>
-                  <Link to="/" className="linkBurger">
+                  <Link to="/" className="linkBurgerNav">
                     Accueil
                   </Link>
-                  <Link to="/trouver_une_borne" className="linkBurger">
+                  <Link to="/trouver_une_borne" className="linkBurgerNav ">
                     Trouver une borne
                   </Link>
-                  <Link to="/trouver_une_voiture" className="linkBurger">
+                  <Link to="/trouver_une_voiture" className="linkBurgerNav ">
                     Trouver une voiture
                   </Link>
-                  <Link to="/questions" className="linkBurger">
+                  {/* <Link to="/questions" className="linkBurgerNav ">
                     Des questions?
-                  </Link>
+                  </Link> 
+                  */}
                   <Link to="/mon_compte" className="linkButtonMapNav">
                     <button type="button">S'inscrire</button>
                   </Link>
@@ -81,9 +82,10 @@ function Nav() {
             <Link to="/trouver_une_voiture" className="linkMapNav">
               Trouver une voiture
             </Link>
-            <Link to="/questions" className="linkMapNav">
+            {/* <Link to="/questions" className="linkMapNav">
               Des questions?
-            </Link>
+            </Link> 
+            */}
             <Link to="/mon_compte" className="linkButtonMapNav">
               <button type="button">S'inscrire</button>
             </Link>

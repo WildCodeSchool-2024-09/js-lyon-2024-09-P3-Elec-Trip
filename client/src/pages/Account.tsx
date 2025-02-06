@@ -123,8 +123,8 @@ function Account() {
                   placeholder="Mot de passe"
                   onChange={handleChangeForm}
                 />
-                <input type="submit" />
               </label>
+              <input type="submit" />
             </form>
           ) : (
             // >> connexion au compte <<
