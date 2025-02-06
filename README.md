@@ -1,6 +1,9 @@
 # P3-base
 
-Ce projet est un monorepo JS, suivant l'architecture React-Express-MySQL telle qu'enseignée à la Wild Code School (v7.1.7) :
+Bienvenue sur le projet Electrip, fork de Geocode
+Electrip est l'outil de réservation tout-en-un, consultable à la fois sur votre ordinateur, votre tablette, mais également sur votre mobile. Avec Electrip, louez ou rechargez votre véhicule électrique au plus proche de votre position.
+
+------------------------------------------------------------------------------------
 
 ```mermaid
 sequenceDiagram

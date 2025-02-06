@@ -8,7 +8,7 @@ import { AuthProvider } from "./contexts/AuthContext";
 /* ************************************************************************* */
 
 // Import the main app component
-import App from "./App";
+
 import Account from "./pages/Account";
 import AnyQuestions from "./pages/AnyQuestions";
 import CarMap from "./pages/CarMap";
@@ -29,10 +29,6 @@ const router = createBrowserRouter([
   {
     path: "/", // The root path
     element: <HomePage />, // Renders the App component for the home page
-  },
-  {
-    path: "/app", //
-    element: <App />,
   },
   {
     path: "/trouver_une_borne",
@@ -64,7 +60,7 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    {/* Avec AuthProvider je fournis le context à l'ensemble de ce qui est encapsulé */}
+    {/* AuthProvider fournit le context à l'ensemble de ce qui est encapsulé */}
     <AuthProvider>
       <RouterProvider router={router} />
       <ToastContainer
