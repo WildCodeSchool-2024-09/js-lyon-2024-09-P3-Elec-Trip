@@ -35,14 +35,19 @@
   color: #353535;
   font-size: 0.8rem;
 }
-.details p {
+.details,
+.statut-available,
+p,
+b {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  color: #353535;
   font-size: 0.85rem;
+}
+.details b {
+  font-weight: 700;
 }
 .statut-available {
   color: #00a323;
-  font-weight: bold;
+  font-weight: 700;
 }
 .car {
   padding-left: 2px;
@@ -78,8 +83,11 @@
     color: #353535;
     font-size: 1rem;
   }
-  .details p {
-    color: #353535;
-    font-size: 1.10rem;
+  .details,
+  .statut-available,
+  p,
+  b {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
   }
 }
