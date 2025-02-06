@@ -87,10 +87,6 @@ function NavHome() {
                     <button type="button">S'authentifier</button>
                   </Link>
                 )}
-
-                <Link to="/mon_compte" className="linkButton">
-                  <button type="button">S'inscrire</button>
-                </Link>
               </ul>
             </div>
           )}
@@ -124,10 +120,6 @@ function NavHome() {
               <button type="button">S'authentifier</button>
             </Link>
           )}
-
-          <Link to="/mon_compte" className="linkButton">
-            <button type="button">S'inscrire</button>
-          </Link>
         </ul>
       )}
     </nav>

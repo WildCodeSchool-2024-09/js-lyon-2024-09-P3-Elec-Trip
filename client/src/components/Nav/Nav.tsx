@@ -70,9 +70,7 @@ function Nav() {
                   <Link to="/trouver_une_voiture" className="linkBurger">
                     Trouver une voiture
                   </Link>
-                  <Link to="/questions" className="linkBurger">
-                    Des questions?
-                  </Link>
+
                   {auth ? (
                     <div
                       onClick={handleLogout}
@@ -105,9 +103,7 @@ function Nav() {
             <Link to="/trouver_une_voiture" className="linkMapNav">
               Trouver une voiture
             </Link>
-            <Link to="/questions" className="linkMapNav">
-              Des questions?
-            </Link>
+
             {auth ? (
               <div
                 onClick={handleLogout}
