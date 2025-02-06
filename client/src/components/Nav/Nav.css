@@ -12,6 +12,11 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.user-profile-image {
+  background: transparent;
+  cursor: pointer;
+}
 .nav ul {
   display: flex;
   gap: 2vw;

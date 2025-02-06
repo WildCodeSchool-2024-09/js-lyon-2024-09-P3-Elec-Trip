@@ -1,15 +1,20 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./NavHome.css";
 
 import BurgerMenu from "../../images/Burger-menu_blanc.png";
 import Logo from "../../images/Logo_ELECTRIP.png";
 import IconHome from "../../images/icon_home.png";
+import UserProfileImage from "../../images/login_gris.png";
+
+import { useAuth } from "../../contexts/AuthContext";
 
 function NavHome() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 860);
+  const { auth, logout } = useAuth(); // Added logout from context
+  const navigate = useNavigate(); // For navigation after logout
 
   useEffect(() => {
     const handleResize = () => {
@@ -33,6 +38,11 @@ function NavHome() {
     if (event.key === "Enter" || event.key === " ") {
       toggleMenu();
     }
+  };
+
+  const handleLogout = () => {
+    logout(); // Call logout from auth context
+    navigate("/"); // Redirect to home page after logout
   };
 
   return (
@@ -62,9 +72,23 @@ function NavHome() {
                 <Link to="/questions" className="linkBurger">
                   Des questions?
                 </Link>
-                <Link to="/mon_compte" className="linkButton">
-                  <button type="button">S'inscrire</button>
-                </Link>
+                {auth ? (
+                  <div
+                    onClick={handleLogout}
+                    className="linkButton"
+                    onKeyDown={(e) => e.key === "Enter" && handleLogout()}
+                  >
+                    <img
+                      src={UserProfileImage}
+                      alt="Se déconnecter"
+                      className="user-profile-image"
+                    />
+                  </div>
+                ) : (
+                  <Link to="/mon_compte" className="linkButton">
+                    <button type="button">S'inscrire</button>
+                  </Link>
+                )}
               </ul>
             </div>
           )}
@@ -83,9 +107,23 @@ function NavHome() {
           <Link to="/questions" className="link">
             Des questions?
           </Link>
-          <Link to="/mon_compte" className="linkButton">
-            <button type="button">S'inscrire</button>
-          </Link>
+          {auth ? (
+            <div
+              onClick={handleLogout}
+              className="linkButton"
+              onKeyDown={(e) => e.key === "Enter" && handleLogout()}
+            >
+              <img
+                src={UserProfileImage}
+                alt="Se déconnecter"
+                className="user-profile-image"
+              />
+            </div>
+          ) : (
+            <Link to="/mon_compte" className="linkButton">
+              <button type="button">S'inscrire</button>
+            </Link>
+          )}
         </ul>
       )}
     </nav>
