@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Edf from "../../images/edf.png";
 import Engie from "../../images/engie.png";
 import Green from "../../images/green-choice.png";
@@ -19,7 +21,9 @@ function Footer() {
       <footer className="footerHome">
         <div className="wrapFooterHome">
           <p>BORNE to be alive présente le projet ELECTRIP</p>
-          <p>Conditions générales d'utilisation</p>
+          <Link className="linkCGU" to="/Conditions_Generales_d'Utilisation">
+            Conditions Générales d'Utilisation
+          </Link>
         </div>
       </footer>
     </>

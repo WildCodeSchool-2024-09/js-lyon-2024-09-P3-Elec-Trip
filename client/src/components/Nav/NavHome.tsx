@@ -6,7 +6,7 @@ import "./NavHome.css";
 import BurgerMenu from "../../images/Burger-menu_blanc.png";
 import Logo from "../../images/Logo_ELECTRIP.png";
 import IconHome from "../../images/icon_home.png";
-import UserProfileImage from "../../images/login_gris.png";
+import UserProfileImage from "../../images/login_blanc.png";
 
 import { useAuth } from "../../contexts/AuthContext";
 

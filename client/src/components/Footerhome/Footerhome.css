@@ -24,9 +24,17 @@
 }
 .wrapPartnersHome {
   padding: 50px 40px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .wrapFooterHome {
   padding: 30px 40px;
   justify-content: space-between;
+}
+.wrapFooterHome p,
+.linkCGU {
+  font-size: 0.9rem;
+}
+.linkCGU {
+  text-decoration: none;
+  color: #ffffff7a;
 }

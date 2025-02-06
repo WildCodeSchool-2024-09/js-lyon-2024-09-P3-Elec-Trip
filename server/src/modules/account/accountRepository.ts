@@ -10,6 +10,7 @@ type Account = {
   hashed_password: string;
 };
 
+// pour créer son compte
 class accountRepository {
   async create(account: Omit<Account, "id">) {
     const [result] = await databaseClient.query<Result>(
@@ -25,7 +26,7 @@ class accountRepository {
     return result.insertId;
   }
 
-  //pour se connecter
+  // pour se connecter
   async findByEmail(email: string) {
     const [result] = await databaseClient.query<Rows>(
       "SELECT * FROM user_account WHERE email = ?",
