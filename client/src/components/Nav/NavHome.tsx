@@ -86,7 +86,7 @@ function NavHome() {
                   </div>
                 ) : (
                   <Link to="/mon_compte" className="linkButton">
-                    <button type="button">S'inscrire</button>
+                    <button type="button">S'authentifier</button>
                   </Link>
                 )}
               </ul>
@@ -121,7 +121,7 @@ function NavHome() {
             </div>
           ) : (
             <Link to="/mon_compte" className="linkButton">
-              <button type="button">S'inscrire</button>
+              <button type="button">S'authentifier</button>
             </Link>
           )}
         </ul>

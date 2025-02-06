@@ -87,7 +87,7 @@ function Nav() {
                     </div>
                   ) : (
                     <Link to="/mon_compte" className="linkButtonMapNav">
-                      <button type="button">S'inscrire</button>
+                      <button type="button">S'authentifier</button>
                     </Link>
                   )}
                 </ul>
@@ -122,7 +122,7 @@ function Nav() {
               </div>
             ) : (
               <Link to="/mon_compte" className="linkButtonMapNav">
-                <button type="button">S'inscrire</button>
+                <button type="button">S'authentifier</button>
               </Link>
             )}
           </ul>
