@@ -10,7 +10,9 @@ import "../App.css";
 function ChargerMap() {
   return (
     <>
-      <Nav />
+      <nav>
+        <Nav />
+      </nav>
       <main className="appContainer">
         <section className="mapContainer">
           <DisplayMap />
