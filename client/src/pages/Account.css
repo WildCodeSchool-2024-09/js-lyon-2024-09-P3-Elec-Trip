@@ -9,12 +9,12 @@
 }
 .accountContenair {
   max-width: 1200px;
-  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 40px;
+  margin: 0 auto;
+  margin-top: 7%;
 }
 .accountInfos {
   width: 70%;
@@ -22,7 +22,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 20px;
 }
 .accountInfos h1 {
@@ -38,6 +37,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  gap: 15px;
 }
 .accountButton button {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -52,38 +52,18 @@
   border: none;
   cursor: pointer;
 }
-.validateBtn {
-  width: 200px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  color: #004b47;
-  text-align: center;
-  background-color: #fff;
-  margin-top: 50px;
-  padding: 10px 35px;
-  border: none;
-  border-radius: 2rem;
-  cursor: pointer;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
-}
 .accountForm {
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  gap: 10px;
-}
-.accountLabel {
-  color: #fff;
-  display: flex;
-  flex-direction: flex;
   justify-content: center;
   align-items: center;
-  cursor: text;
 }
-.accountInput {
-  width: 100%;
+.accountForm input[type="text"],
+.accountForm input[type="email"],
+.accountForm input[type="password"] {
+  width: 300px;
+  margin-bottom: 20px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 1em;
@@ -94,12 +74,26 @@
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 }
-.accountInput::placeholder {
+.accountForm Input::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-.accountInput:focus {
+.accountForm Input:focus {
   outline: none;
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.25);
+}
+.accountForm input[type="submit"] {
+  width: 200px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #004b47;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px 35px;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
 }
 
 /*---- Tablet ----*/
@@ -114,13 +108,19 @@
   .accountInfos h1 {
     font-size: 2.4rem;
   }
+  .accountForm input[type="text"],
+  .accountForm input[type="email"],
+  .accountForm input[type="password"] {
+    width: 350px;
+    margin-bottom: 20px;
+  }
 }
 
 /*---- Desktop ----*/
 @media screen and (min-width: 1100px) {
   .accountContenair {
     max-width: 1200px;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
   }
   .accountInfos {
@@ -129,5 +129,11 @@
   }
   .accountInfos h1 {
     font-size: 2.875rem;
+  }
+  .accountForm input[type="text"],
+  .accountForm input[type="email"],
+  .accountForm input[type="password"] {
+    width: 450px;
+    margin-bottom: 20px;
   }
 }

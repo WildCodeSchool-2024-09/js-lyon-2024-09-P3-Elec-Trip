@@ -1,0 +1,36 @@
+.CGUContenair {
+  max-width: 900px;
+  padding: 0 60px;
+  margin: 60px auto;
+}
+.CGUContenair h1,
+h2 {
+  font-family: "Nexa", Arial, Helvetica, sans-serif;
+  margin: 20px 0 10px 0;
+}
+.CGUContenair h3,
+p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.CGUContenair h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+.CGUContenair h2 {
+  font-size: 1.5rem;
+}
+.CGUContenair h3 {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.CGUContenair p {
+  font-weight: 300;
+  font-size: 1.15rem;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.CGUContenair li {
+  margin-left: 30px;
+}

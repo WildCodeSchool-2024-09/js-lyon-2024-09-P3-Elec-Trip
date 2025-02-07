@@ -1,8 +1,10 @@
 import "./Selection.css";
+
 import type { LatLngTuple } from "leaflet";
 import { useEffect, useState } from "react";
 import { useCoordinates } from "../../contexts/EVStationContext.tsx";
 import borne from "../../images/Borne_recharge_illustration.png";
+
 
 interface coordinatesOfCurrentStation {
   id: number;
@@ -94,8 +96,10 @@ function writeBorneDescription(available_bornesArray: boolean[]): string {
 }
 
 function Selection() {
+
   //This is context state share with Display map // please read above type "coordinatesOfCurrentStation"
   const { location, coordinatesOfCurrentStation } = useCoordinates();
+
 
   //States declared below are load in jsx return to fill content with data of current borne selected by user
   const [distanceFromBorne, setDistanceFromBorne] = useState<string>("");

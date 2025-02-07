@@ -14,7 +14,6 @@ function ChargerMap() {
       <nav>
         <Nav />
       </nav>
-
       <main className="appContainer">
         <CoordinatesProvider>
           <section className="mapContainer">
@@ -29,6 +28,7 @@ function ChargerMap() {
             <Footer />
           </section>
         </CoordinatesProvider>
+
       </main>
     </>
   );

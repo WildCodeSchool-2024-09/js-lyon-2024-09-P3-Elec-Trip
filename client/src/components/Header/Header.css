@@ -11,7 +11,7 @@
 }
 
 /*---- Mobile ----*/
-header {
+.headerHome {
   margin: 0 auto;
   background-image: url(../../images/bg_home.jpg);
   height: 100vh;
@@ -27,6 +27,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 40px;
+  margin: 0 auto;
 }
 .headerInfos {
   margin: 30px;
