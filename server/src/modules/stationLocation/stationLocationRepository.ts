@@ -11,6 +11,8 @@ type localisation = {
   acces_recharge: string;
   puiss_max: number;
   type_prise: string;
+  id_bornes: number[];
+  available_bornes: boolean[];
 };
 
 type catchQueryParameters = { latitude: string; longitude: string };
@@ -63,9 +65,11 @@ class stationLocalisationRepository {
   async getStationLocalisation(catchQueryParameters: catchQueryParameters) {
     const querryCoords =
       await this.DefinePerimetersArroundUserLocation(catchQueryParameters);
+    // "SELECT * FROM station WHERE ylatitude BETWEEN ? AND ? AND xlongitude BETWEEN ? AND ? LIMIT 500",
 
+    //" SELECT s.*, JSON_ARRAYAGG(b.id) AS id_bornes, JSON_ARRAYAGG(b.available) AS available_bornes FROM station s  JOIN bornes b ON s.id = b.station_id WHERE ylatitude BETWEEN ? AND ? AND xlongitude BETWEEN ? AND ? GROUP BY s.id ORDER BY s.id ASC LIMIT 2; "
     const [rows] = await databaseClient.query<Rows>(
-      "SELECT * FROM station WHERE ylatitude BETWEEN ? AND ? AND xlongitude BETWEEN ? AND ? LIMIT 500",
+      " SELECT s.*, JSON_ARRAYAGG(b.id) AS id_bornes, JSON_ARRAYAGG(b.available) AS available_bornes FROM station s  JOIN bornes b ON s.id = b.station_id WHERE ylatitude BETWEEN ? AND ? AND xlongitude BETWEEN ? AND ? GROUP BY s.id ORDER BY s.id ASC LIMIT 50 ",
       [
         querryCoords.LatitudeSouth,
         querryCoords.LatitudeNorth,
@@ -74,6 +78,7 @@ class stationLocalisationRepository {
       ],
     );
 
+    //console.log(rows);
     await this.createCoordinatesEntry(rows);
     return rows as localisation[];
   }
