@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 
 import Footer from "../components/Footerhome/Footerhome";
-// import "../components/Footerhome/Footerhome.tsx";
 import Header from "../components/Header/Header";
 
 import "../App.css";
 import "./HomePage.css";
-import "../components/Footerhome/Footerhome.css";
 
 import Buttonplus from "../images/btn_+.png";
 import ImgAbout from "../images/img_about.jpg";
@@ -43,6 +41,7 @@ function HomePage() {
           <img className="imgHome" src={ImgCharger} alt="cliqué d'une borne" />
         </div>
       </section>
+
       <section className="section2">
         <div className="homeContenair2">
           <div className="homeInfo2">
@@ -66,6 +65,7 @@ function HomePage() {
           <img className="imgHome" src={ImgCar} alt="cliché d'une voiture" />
         </div>
       </section>
+
       <section className="section1">
         <div className="homeContenair">
           <div className="homeInfo">
@@ -95,11 +95,11 @@ function HomePage() {
           />
         </div>
       </section>
-      {/* Nouvelle partie questions */}
+
       <section className="section2">
         <div className="homeContenair">
           <div className="homeContent">
-            <h2 className="title">Questions fréquentes</h2>
+            <h2>Questions fréquentes</h2>
             <details className="homeDetails">
               <summary className="homeSummary">
                 Puis-je bénéficier des services de localisation de bornes pour
@@ -171,6 +171,7 @@ function HomePage() {
           </div>
         </div>
       </section>
+
       <Footer />
     </>
   );
