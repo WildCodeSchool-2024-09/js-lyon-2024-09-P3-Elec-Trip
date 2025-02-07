@@ -5,14 +5,15 @@ import type { localisation } from "../../../../server/src/modules/stationLocatio
 import "./DisplayMap.css";
 import "leaflet/dist/leaflet.css";
 import type L from "leaflet";
+import { useCoordinates } from "../../contexts/EVStationContext.tsx";
 import { icon } from "./constant";
 
 type ExtendedLocalisation = Omit<localisation, "coordinates"> & {
   id: number;
-  coordinates: LatLngTuple;
+  coordinates: LatLngTuple; //location Latitude / Longitude
+  id_bornes: number[];
+  available_bornes: boolean[];
 };
-
-type location = [number, number];
 
 function LocationMarker() {
   const [position, setPosition] = useState<L.LatLng | null>(null);
@@ -39,7 +40,8 @@ function DisplayMap() {
   const [EVStationcoordinates, setEVStationCoordinates] = useState<
     ExtendedLocalisation[]
   >([]);
-  const [location, setLocation] = useState<location>([48.866667, 2.333333]); //load in Paris
+  const { setCoordinatesOfCurrentStation } = useCoordinates();
+  const { location, setLocation } = useCoordinates();
 
   const getCurrentLocationOfUser = useCallback((): Promise<
     [number, number]
@@ -56,6 +58,10 @@ function DisplayMap() {
       }
     });
   }, []);
+
+  const handleMarkerClick = (item: ExtendedLocalisation) => {
+    setCoordinatesOfCurrentStation(item);
+  };
 
   useEffect(() => {
     const returnAllStationsAroundUSer = async () => {
@@ -74,7 +80,7 @@ function DisplayMap() {
     };
 
     returnAllStationsAroundUSer();
-  }, [getCurrentLocationOfUser]);
+  }, [getCurrentLocationOfUser, setLocation]);
 
   return (
     <section>
@@ -89,7 +95,11 @@ function DisplayMap() {
           url="http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
         />
         {EVStationcoordinates.map((item) => (
-          <Marker key={item.id} position={item.coordinates} />
+          <Marker
+            key={item.id}
+            position={item.coordinates}
+            eventHandlers={{ click: () => handleMarkerClick(item) }}
+          />
         ))}
         <LocationMarker />
       </MapContainer>

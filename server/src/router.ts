@@ -22,4 +22,7 @@ router.put("/api/account", accountActions.edit);
 import stationLocationAction from "./modules/stationLocation/stationLocationAction";
 router.get("/EVstations", stationLocationAction.browse);
 
+import BookABornesAction from "./modules/bookABorne/BookABornesAction";
+router.put("/bookAborn", BookABornesAction.edit);
+
 export default router;
