@@ -1,18 +1,17 @@
+/*---- Mobile ----*/
 .partnersHome {
   background-color: #2d3333;
 }
-.partnersHome Img {
-  height: 3.5rem;
+.wrapPartnersHome Img {
+  /* height: 3.5rem; svp, arretez avec les 'rem' */
+  height: 35px;
+  object-fit: covert;
 }
 .footerHome {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: #ffffff7a;
   background-color: #222627;
-}
-.footerHome img {
-  height: 10px;
-  margin: 2px 5px 0 5px;
 }
 .wrapFooterHome,
 .wrapPartnersHome {
@@ -37,4 +36,32 @@
 .linkCGU {
   text-decoration: none;
   color: #ffffff7a;
+}
+
+/*---- Mobile intermédiaire ----*/
+@media screen and (min-width: 390px) {
+  .wrapPartnersHome Img {
+    height: 45px;
+  }
+}
+
+/*---- Tablet Vertical ----*/
+@media screen and (min-width: 500px) {
+  .wrapPartnersHome Img {
+    height: 60px;
+  }
+}
+
+/*---- Tablet Horizontal ----*/
+@media screen and (min-width: 1024px) {
+  .wrapPartnersHome Img {
+    height: 70px;
+  }
+}
+
+/*---- Desktop ----*/
+@media screen and (min-width: 1100px) {
+  .wrapPartnersHome Img {
+    height: 80px;
+  }
 }
