@@ -6,7 +6,7 @@ import "./DisplayMap.css";
 import "leaflet/dist/leaflet.css";
 import type L from "leaflet";
 import { useCoordinates } from "../../contexts/EVStationContext.tsx";
-import  LeafletIconsRegister  from "./markerIconsOnmap.ts";
+import LeafletIconsRegister from "./markerIconsOnmap.ts";
 
 type ExtendedLocalisation = Omit<localisation, "coordinates"> & {
   id: number;
@@ -29,9 +29,7 @@ function LocationMarker() {
 
   return position === null ? null : (
     <Marker position={position} icon={LeafletIconsRegister.UserLocation}>
-      <Popup>
-        Vous êtes ici.
-      </Popup>
+      <Popup>Vous êtes ici.</Popup>
     </Marker>
   );
 }
