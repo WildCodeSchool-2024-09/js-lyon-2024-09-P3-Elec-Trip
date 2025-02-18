@@ -61,19 +61,13 @@ function NavHome() {
             <div className="menuBubble">
               <ul>
                 <Link to="/" className="linkBurger">
-                  <button type="button" className="btn neumorphic-burger">
-                    Accueil
-                  </button>
+                  Accueil
                 </Link>
                 <Link to="/trouver_une_borne" className="linkBurger">
-                  <button type="button" className="btn neumorphic-burger">
-                    Trouver une borne
-                  </button>
+                  Trouver une borne
                 </Link>
                 <Link to="/trouver_une_voiture" className="linkBurger">
-                  <button type="button" className="btn neumorphic-burger">
-                    Trouver une voiture
-                  </button>
+                  Trouver une voiture
                 </Link>
 
                 {auth ? (
@@ -90,9 +84,7 @@ function NavHome() {
                   </div>
                 ) : (
                   <Link to="/mon_compte" className="linkButton">
-                    <button type="button" className="btn neumorphic">
-                      S'authentifier
-                    </button>
+                    <button type="button">S'authentifier</button>
                   </Link>
                 )}
               </ul>
