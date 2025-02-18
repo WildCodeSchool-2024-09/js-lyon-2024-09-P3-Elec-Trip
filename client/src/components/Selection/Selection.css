@@ -37,6 +37,7 @@
 }
 .details,
 .statut-available,
+.statut-notavailable,
 p,
 b {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -49,6 +50,11 @@ b {
   color: #00a323;
   font-weight: 700;
 }
+.statut-notavailable {
+  color: red;
+  font-weight: 700;
+}
+
 .car {
   padding-left: 2px;
 }
@@ -60,6 +66,22 @@ b {
 .time {
   padding-bottom: 5px;
   padding-left: 10px;
+}
+
+.greenSpot,
+.redSpot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.greenSpot {
+  background-color: green;
+}
+
+.redSpot {
+  background-color: red;
 }
 
 /*---- Desktop ----*/
@@ -85,6 +107,7 @@ b {
   }
   .details,
   .statut-available,
+  .statut-notavailable,
   p,
   b {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;

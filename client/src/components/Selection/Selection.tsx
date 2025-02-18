@@ -78,19 +78,31 @@ function countAvailableBornes(
 }
 
 //if any other borne is available does return "non dispo"
-function isAvailable(available_bornesArray: boolean[]): string {
+function isAvailable(available_bornesArray: boolean[]): JSX.Element {
   const resultAvailable = countAvailableBornes(available_bornesArray, true); // if borne id defined as 1
 
   if (resultAvailable === available_bornesArray.length)
-    return "🔴 Non Disponible";
+    return <p className="statut-notavailable">🔴 Non Disponible</p>;
 
-  return "🟢 Disponible";
+  return <p className="statut-available">🟢 Disponible</p>;
 }
 
 function writeBorneDescription(available_bornesArray: boolean[]): string {
   const returnAvailableBornes = `${available_bornesArray.length}`;
 
   return ` ${returnAvailableBornes} bornes`;
+}
+
+function listOfAvailableBornes(available_bornesArray: boolean[]): JSX.Element {
+  const borneNotAvailable = countAvailableBornes(available_bornesArray, true);
+  const borneAvailable = countAvailableBornes(available_bornesArray, false);
+
+  return (
+    <div>
+      <span className="greenSpot" /> <b>{borneAvailable}</b>{" "}
+      <span className="redSpot" /> <b>{borneNotAvailable}</b>
+    </div>
+  );
 }
 
 function Selection() {
@@ -100,7 +112,10 @@ function Selection() {
   //States declared below are load in jsx return to fill content with data of current borne selected by user
   const [distanceFromBorne, setDistanceFromBorne] = useState<string>("");
   const [borneDescription, setBorneDescription] = useState<string>("");
-  const [borneAvailable, setBorneAvailable] = useState<string>("");
+  const [borneList, setBorneList] = useState<JSX.Element | null>(null);
+  const [borneAvailable, setBorneAvailable] = useState<JSX.Element | null>(
+    null,
+  ); //useState<string>("");
 
   useEffect(() => {
     if (coordinatesOfCurrentStation) {
@@ -108,19 +123,26 @@ function Selection() {
         location,
         coordinatesOfCurrentStation,
       );
+
       const distanceKmOrmeter =
         writeDistanceToKilometerOrMeter(findOutDistance);
+
+      const borneList = listOfAvailableBornes(
+        coordinatesOfCurrentStation.available_bornes,
+      );
+
       const borneDetails = writeBorneDescription(
         coordinatesOfCurrentStation.available_bornes,
       );
+
       const defineAvability = isAvailable(
         coordinatesOfCurrentStation.available_bornes,
       );
 
       setDistanceFromBorne(distanceKmOrmeter);
-      setBorneAvailable(defineAvability);
+      setBorneList(borneList);
       setBorneDescription(borneDetails);
-      //console.log(coordinatesOfCurrentStation);
+      setBorneAvailable(defineAvability);
     }
   }, [coordinatesOfCurrentStation, location]);
 
@@ -147,7 +169,8 @@ function Selection() {
               <section className="availability">
                 <p>Disponibilité</p>
                 <b>{borneDescription}</b>
-                <p className="statut-available">{borneAvailable}</p>
+                <div>{borneList}</div>
+                {borneAvailable}
               </section>
 
               <section className="time">

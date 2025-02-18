@@ -6,7 +6,7 @@ import "./DisplayMap.css";
 import "leaflet/dist/leaflet.css";
 import type L from "leaflet";
 import { useCoordinates } from "../../contexts/EVStationContext.tsx";
-import { icon } from "./constant";
+import LeafletIconsRegister from "./markerIconsOnmap.ts";
 
 type ExtendedLocalisation = Omit<localisation, "coordinates"> & {
   id: number;
@@ -28,10 +28,8 @@ function LocationMarker() {
   }, [map]);
 
   return position === null ? null : (
-    <Marker position={position} icon={icon}>
-      <Popup>
-        Vous êtes ici. <br />
-      </Popup>
+    <Marker position={position} icon={LeafletIconsRegister.UserLocation}>
+      <Popup>Vous êtes ici.</Popup>
     </Marker>
   );
 }
@@ -43,6 +41,7 @@ function DisplayMap() {
   const { setCoordinatesOfCurrentStation } = useCoordinates();
   const { location, setLocation } = useCoordinates();
 
+  //this function get latitude & longitude from browser  and use it later to fetch / get stations around user
   const getCurrentLocationOfUser = useCallback((): Promise<
     [number, number]
   > => {
@@ -63,7 +62,27 @@ function DisplayMap() {
     setCoordinatesOfCurrentStation(item);
   };
 
+  //this function parse available_bornes from fetch to define which icone to use form LeafletIconsRegister.
+  function defineWhichIconToPick(available_bornes: boolean[]) {
+    const count = available_bornes.filter((borne) => !borne).length;
+
+    if (available_bornes.length === count) {
+      return LeafletIconsRegister.stationLocationBlue;
+    }
+
+    if (count === 0) {
+      return LeafletIconsRegister.stationLocationRed;
+    }
+
+    if (count <= available_bornes.length / 2) {
+      return LeafletIconsRegister.stationLocationYellow;
+    }
+    // return a default icon if any condition is met. to prevent component to break while running.
+    return LeafletIconsRegister.stationLocationBlue;
+  }
+
   useEffect(() => {
+    //this function fetch/get all satision Arround user location
     const returnAllStationsAroundUSer = async () => {
       try {
         const newLocation: [number, number] = await getCurrentLocationOfUser();
@@ -98,6 +117,7 @@ function DisplayMap() {
           <Marker
             key={item.id}
             position={item.coordinates}
+            icon={defineWhichIconToPick(item.available_bornes)}
             eventHandlers={{ click: () => handleMarkerClick(item) }}
           />
         ))}
