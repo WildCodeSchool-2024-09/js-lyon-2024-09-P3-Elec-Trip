@@ -11,11 +11,19 @@ function Footer() {
   return (
     <>
       <section className="partnersHome">
-        <div className="wrapPartnersHome">
-          <img src={Edf} alt="edflogo" />
-          <img src={Engie} alt="engielogo" />
-          <img src={Total} alt="totallogo" />
-          <img src={Green} alt="greenlogo" />
+        <div className="scroll-container">
+          <div className="wrapPartnersHome">
+            <img src={Edf} alt="edflogo" />
+            <img src={Engie} alt="engielogo" />
+            <img src={Total} alt="totallogo" />
+            <img src={Green} alt="greenlogo" />
+          </div>
+          <div className="wrapPartnersHome">
+            <img src={Edf} alt="edflogo" />
+            <img src={Engie} alt="engielogo" />
+            <img src={Total} alt="totallogo" />
+            <img src={Green} alt="greenlogo" />
+          </div>
         </div>
       </section>
       <footer className="footerHome">
