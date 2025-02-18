@@ -6,7 +6,7 @@ import IconScroll from "../../images/icon_scroll.png";
 
 function Header() {
   return (
-    <header>
+    <header className="headerHome">
       <NavHome />
       <section className="headerContenair">
         <article className="headerInfos">
