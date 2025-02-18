@@ -10,6 +10,7 @@ type Bornes = {
 };
 
 class BookABornesRepository {
+  // this function parse if a borne is available and return its id to get reserved
   async returnBorneID(array: Rows) {
     for (let i = 0; i < array.length; i++) {
       if (array[i].available === 0) {
@@ -28,15 +29,12 @@ class BookABornesRepository {
     const borneIdToBook = await this.returnBorneID(searchBornes);
 
     if (borneIdToBook === -1) throw new Error("Invalid parameters");
-    // console.log("l'id de la borne : ", borneIdToBook);
 
     const [result] = await databaseClient.query<Result>(
       "UPDATE bornes SET available = ? where id = ?",
       [available_bornes, borneIdToBook],
     );
 
-    // console.log('le result :')
-    // console.log(result)
     return result.affectedRows;
   }
 }

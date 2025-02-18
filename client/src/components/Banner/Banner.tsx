@@ -1,10 +1,11 @@
 import Wire from "../../images/mini_icone_borne.png";
 import "./banner.css";
 import { useCallback, useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import { useCoordinates } from "../../contexts/EVStationContext.tsx";
 
 function banner() {
-  //--- This check if there is available bornes
+  //--- This  functions check if there is available bornes
   const countAvailableBornes = useCallback(
     (available_bornesArray: boolean[], booleanType: boolean): number => {
       const count = available_bornesArray.filter(
@@ -15,7 +16,6 @@ function banner() {
     [],
   );
 
-  //function isAvailable (available_bornesArray : boolean[]) : boolean {
   const isAvailable = useCallback(
     (available_bornesArray: boolean[]): boolean => {
       const resultAvailable = countAvailableBornes(available_bornesArray, true); // if borne id defined as 1 Check if there is at least one borne available.
@@ -27,25 +27,7 @@ function banner() {
     [countAvailableBornes],
   );
 
-  //--- This check if there is available bornes --- END
-
-  //this function return the borne index in available_bornes []. when
-  const defineWhichBorneIsAvailable = useCallback(
-    (available_bornes: boolean[]): number => {
-      let index = 0;
-
-      while (index < available_bornes.length) {
-        //console.log(available_bornes[index]);
-        if (!available_bornes[index])
-          // find at which index the borne is available and return its index
-          return index;
-
-        index++;
-      }
-      return index;
-    },
-    [],
-  );
+  //--- This  functions  if there is available bornes --- END
 
   const handleClickReservation = () => {
     try {
@@ -55,13 +37,20 @@ function banner() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          //id_station: coordinatesOfCurrentStation?.id,
-          id_station: borneToFetch,
+          id_station: coordinatesOfCurrentStation?.id,
           available_bornes: true,
         }),
-      })
-        .then((res) => res.json())
-        .then((data) => console.log(data));
+      }).then((res) => {
+        if (res.status === 200) {
+          toast.info("Votre borne a bien été réservée ! 😊");
+        } else {
+          toast.error(
+            "Une erreur s'est produite, veuillez réessayer ou rafraîchir la page",
+          );
+        }
+
+        res.json();
+      });
     } catch (error) {
       console.error("Error reserving :", error);
     }
@@ -69,26 +58,17 @@ function banner() {
 
   const { coordinatesOfCurrentStation } = useCoordinates();
   const [available, setAvailable] = useState(false);
-  const [borneToFetch, setBorneToFetch] = useState(0);
 
   useEffect(() => {
-    //console.log(coordinatesOfCurrentStation)
     if (coordinatesOfCurrentStation) {
-      const { id_bornes, available_bornes } = coordinatesOfCurrentStation;
-
-      const borneIndex = defineWhichBorneIsAvailable(available_bornes);
-      setBorneToFetch(id_bornes[borneIndex]);
-
-      //console.log("id_bornes", id_bornes);
-      //console.log("available_bornes", available_bornes);
-      //console.log("borneToFetch", borneToFetch);
+      const { available_bornes } = coordinatesOfCurrentStation;
 
       const checkIfOneBorneRemainAtLeast = isAvailable(available_bornes); //true by default
 
       if (checkIfOneBorneRemainAtLeast) setAvailable(true);
       else setAvailable(false);
     }
-  }, [coordinatesOfCurrentStation, defineWhichBorneIsAvailable, isAvailable]);
+  }, [coordinatesOfCurrentStation, isAvailable]);
 
   return (
     <>
