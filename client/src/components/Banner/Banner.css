@@ -90,9 +90,7 @@ input:checked + .sliderRound:before {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.ButtonReserv:hover {
-  background-color: rgb(249, 250, 251);
-}
+
 .ButtonReserv:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
