@@ -1,6 +1,30 @@
 .partnersHome {
   background-color: #2d3333;
+  overflow: hidden;
+  position: relative;
 }
+
+/* Ajout des masques de fondu */
+.partnersHome::before,
+.partnersHome::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  z-index: 2;
+}
+
+.partnersHome::before {
+  left: 0;
+  background: linear-gradient(to right, #2d3333 0%, transparent 100%);
+}
+
+.partnersHome::after {
+  right: 0;
+  background: linear-gradient(to left, #2d3333 0%, transparent 100%);
+}
+
 .partnersHome Img {
   height: 3.5rem;
 }
@@ -24,9 +48,26 @@
 }
 .wrapPartnersHome {
   padding: 50px 40px;
-  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  gap: 100px;
 }
 .wrapFooterHome {
   padding: 30px 40px;
   justify-content: space-between;
+}
+
+.scroll-container {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  width: fit-content;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
