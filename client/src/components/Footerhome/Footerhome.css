@@ -5,7 +5,11 @@
   position: relative;
   width: 100%;
 }
-
+.linkCGU {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #ffffff7a;
+}
 /* Ajuster les masques de fondu */
 .partnersHome::before,
 .partnersHome::after {

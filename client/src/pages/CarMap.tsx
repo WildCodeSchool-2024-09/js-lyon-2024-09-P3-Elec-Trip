@@ -3,7 +3,9 @@ import Footer from "../components/Footer/Footer";
 import DisplayMap from "../components/Map/DisplayMap";
 import Nav from "../components/Nav/Nav";
 import Selection from "../components/Selection/Selection";
+import { CoordinatesProvider } from "../contexts/EVStationContext.tsx";
 
+import "./CarMap.css";
 import "../App.css";
 
 function CarMap() {
@@ -12,12 +14,20 @@ function CarMap() {
       <nav>
         <Nav />
       </nav>
+      <main className="appContainer">
+        <CoordinatesProvider>
+          <section className="mapContainer">
+            <DisplayMap />
+          </section>
 
-      <main>
-        <DisplayMap />
-        <Banner />
-        <Selection />
-        <Footer />
+          <section className="mapOptions">
+            <div className="WrappBannerAndSelection">
+              <Banner />
+              <Selection />
+            </div>
+            <Footer />
+          </section>
+        </CoordinatesProvider>
       </main>
     </>
   );

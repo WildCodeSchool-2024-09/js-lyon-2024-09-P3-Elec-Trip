@@ -1,0 +1,4510 @@
+[
+  {
+    "car_id": "LYN-1Arr-0001",
+    "model": "Kia EV6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0002",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 19,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0003",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 20,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0004",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 36,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0005",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 78,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0006",
+    "model": "Mercedes EQB",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 38,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0007",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 97,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0008",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 76,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0009",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 20,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0010",
+    "model": "Mercedes EQB",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 55,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0011",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 69,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0012",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 19,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0013",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 65,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0014",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 46,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0015",
+    "model": "Fiat 500e",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 65,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0016",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 15,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0017",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 63,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0018",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 18,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0019",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 96,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0020",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 65,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0021",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 61,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0022",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 51,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0023",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 46,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0024",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 90,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0025",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 89,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0026",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 22,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0027",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 89,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0028",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 78,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0029",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 17,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0030",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 33,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0031",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0032",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0033",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0034",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 22,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0035",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 94,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0036",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 60,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0037",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 22,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0038",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 66,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0039",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 42,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0040",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 54,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0041",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 15,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0042",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 25,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0043",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 34,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0044",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 68,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0045",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 32,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0046",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 53,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0047",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 51,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-1Arr-0048",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 55,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0049",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 62,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-1Arr-0050",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 58,
+    "is_available": false
+  },
+
+  {
+    "car_id": "LYN-2eArr-0001",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 15,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0002",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 63,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0003",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 84,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0004",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 37,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0005",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 77,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0006",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 48,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0007",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 71,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0008",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 53,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0009",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 46,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0010",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 32,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0011",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 19,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0012",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 36,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0013",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 65,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0014",
+    "model": "BMW i7",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 56,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0015",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 36,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0016",
+    "model": "Toyota bZ4X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 41,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0017",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 16,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0018",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 65,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0019",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 68,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0020",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 19,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0021",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 97,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0022",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 20,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0023",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 64,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0024",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 24,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0025",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 19,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0026",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 28,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0027",
+    "model": "Mercedes EQS",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 80,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0028",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 23,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0029",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 31,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0030",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 42,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0031",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 90,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0032",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 94,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0033",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 54,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0034",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 95,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0035",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 17,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0036",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 82,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0037",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 22,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0038",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 78,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0039",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 37,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0040",
+    "model": "Toyota bZ4X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 89,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0041",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 62,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0042",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 53,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0043",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 68,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0044",
+    "model": "Mercedes EQS",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 81,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0045",
+    "model": "BMW i7",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 86,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0046",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 60,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0047",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 52,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-2eArr-0048",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 59,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0049",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 95,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-2eArr-0050",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 60,
+    "is_available": false
+  },
+
+  {
+    "car_id": "LYN-3Arr-0001",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 92,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0002",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 17,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0003",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 52,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0004",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 49,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0005",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 15,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0006",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 63,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0007",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 20,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0008",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 85,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0009",
+    "model": "Fiat 500e",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 43,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0010",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 50,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0011",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 96,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0012",
+    "model": "Hyundai IONIQ 5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 94,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0013",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 97,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0014",
+    "model": "BYD Atto 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 95,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0015",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 100,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0016",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 81,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0017",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 47,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0018",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 45,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0019",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 44,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0020",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 86,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0021",
+    "model": "Mercedes EQB",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 35,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0022",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 97,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0023",
+    "model": "BYD Atto 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 27,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0024",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 66,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0025",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 42,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0026",
+    "model": "Mercedes EQS",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 21,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0027",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 47,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0028",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 96,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0029",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 65,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0030",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 25,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0031",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 58,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0032",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 55,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0033",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 73,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0034",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 87,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0035",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 73,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0036",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 60,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0037",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 70,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0038",
+    "model": "Hyundai IONIQ 5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 86,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0039",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 57,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0040",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 93,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0041",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 89,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0042",
+    "model": "Toyota bZ4X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 69,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0043",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 52,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0044",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 74,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0045",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 42,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0046",
+    "model": "Mercedes EQS",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 59,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0047",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 60,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-3Arr-0048",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 15,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0049",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 53,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-3Arr-0050",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 57,
+    "is_available": true
+  },
+
+  {
+    "car_id": "LYN-4Arr-0001",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 62,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0002",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 94,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0003",
+    "model": "Hyundai IONIQ 5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 34,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0004",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 43,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0005",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 31,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0006",
+    "model": "Kia EV6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 92,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0007",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 70,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0008",
+    "model": "BYD Atto 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 73,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0009",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 78,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0010",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 22,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0011",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 54,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0012",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 65,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0013",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 61,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0014",
+    "model": "Hyundai IONIQ 5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 56,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0015",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 56,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0016",
+    "model": "Hyundai IONIQ 5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 42,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0017",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 83,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0018",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 27,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0019",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 61,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0020",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 55,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0021",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 100,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0022",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 99,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0023",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 68,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0024",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 50,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0025",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 26,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0026",
+    "model": "Fiat 500e",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 80,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0027",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 17,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0028",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 29,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0029",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 21,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0030",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 39,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0031",
+    "model": "BMW i7",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 83,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0032",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 69,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0033",
+    "model": "Kia EV6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 55,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0034",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 100,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0035",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 61,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0036",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 70,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0037",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 21,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0038",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 89,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0039",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 78,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0040",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 19,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0041",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 94,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0042",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 34,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0043",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 50,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0044",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 60,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0045",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 84,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0046",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 71,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0047",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 22,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0048",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 77,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-4Arr-0049",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 100,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-4Arr-0050",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 79,
+    "is_available": false
+  },
+
+  {
+    "car_id": "LYN-5Arr-0001",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 97,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0002",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 16,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0003",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 21,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0004",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 19,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0005",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 93,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0006",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 68,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0007",
+    "model": "Kia EV6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 75,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0008",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 67,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0009",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 17,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0010",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 75,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0011",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 87,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0012",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 54,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0013",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 46,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0014",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 93,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0015",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 37,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0016",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 91,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0017",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 63,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0018",
+    "model": "Kia EV6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 79,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0019",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 85,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0020",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 84,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0021",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 79,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0022",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 100,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0023",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 87,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0024",
+    "model": "Mercedes EQB",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 71,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0025",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 33,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0026",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 95,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0027",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 67,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0028",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 45,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0029",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 38,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0030",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 99,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0031",
+    "model": "Mercedes EQB",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 32,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0032",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 34,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0033",
+    "model": "BYD Atto 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 85,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0034",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 20,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0035",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 38,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0036",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 28,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0037",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 70,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0038",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 86,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0039",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 74,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0040",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 45,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0041",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 43,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0042",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 72,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0043",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 40,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0044",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 71,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0045",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 25,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0046",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 93,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0047",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 37,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0048",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 100,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-5Arr-0049",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 53,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-5Arr-0050",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 28,
+    "is_available": true
+  },
+
+  {
+    "car_id": "LYN-6Arr-0001",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 27,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0002",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 65,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0003",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 29,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0004",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 18,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0005",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 88,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0006",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0007",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 85,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0008",
+    "model": "Toyota bZ4X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 62,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0009",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 17,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0010",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 57,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0011",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 75,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0012",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 84,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0013",
+    "model": "BYD Atto 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 67,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0014",
+    "model": "Kia EV6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 52,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0015",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 26,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0016",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 89,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0017",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 43,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0018",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 95,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0019",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 74,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0020",
+    "model": "Mercedes EQS",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0021",
+    "model": "Mercedes EQB",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 66,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0022",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 91,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0023",
+    "model": "Hyundai IONIQ 5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 19,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0024",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 100,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0025",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 26,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0026",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 77,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0027",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 79,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0028",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0029",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 52,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0030",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 67,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0031",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 86,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0032",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 19,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0033",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 24,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0034",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 46,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0035",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 44,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0036",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 23,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0037",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 45,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0038",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 69,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0039",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 15,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0040",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 92,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0041",
+    "model": "Mercedes EQS",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 76,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0042",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 95,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0043",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 55,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0044",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 17,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0045",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 63,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0046",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 22,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0047",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 24,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0048",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 38,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-6Arr-0049",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 59,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-6Arr-0050",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 85,
+    "is_available": true
+  },
+
+  {
+    "car_id": "LYN-7Arr-0001",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 55,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0002",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 24,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0003",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 52,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-7Arr-0004",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 92,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0005",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 50,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0006",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 45,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-7Arr-0007",
+    "model": "Kia EV6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 85,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0008",
+    "model": "Hyundai IONIQ 5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 96,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-7Arr-0009",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 95,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0010",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 41,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0011",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 65,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0012",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 26,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0013",
+    "model": "Fiat 500e",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 82,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0014",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 56,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0015",
+    "model": "Fiat 500e",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 43,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0016",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 66,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0017",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 62,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0018",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 57,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-7Arr-0019",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 62,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0020",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 77,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0021",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 16,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-7Arr-0022",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 88,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0023",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 94,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0024",
+    "model": "BMW i7",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 84,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-7Arr-0025",
+    "model": "Mercedes EQS",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0026",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 62,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0027",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 62,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0028",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 36,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0029",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 40,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0030",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 21,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0031",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 27,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0032",
+    "model": "BYD Atto 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 36,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0033",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 38,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0034",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 84,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0035",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 50,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-7Arr-0036",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 42,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0037",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 54,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0038",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 76,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0039",
+    "model": "Toyota bZ4X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 76,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0040",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 81,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-7Arr-0041",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0042",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 70,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0043",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 42,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-7Arr-0044",
+    "model": "Hyundai IONIQ 5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 60,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0045",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 79,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0046",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 59,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0047",
+    "model": "BMW i7",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 27,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0048",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 61,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-7Arr-0049",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 45,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-7Arr-0050",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 83,
+    "is_available": false
+  },
+
+  {
+    "car_id": "LYN-8Arr-0001",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 29,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0002",
+    "model": "BMW i7",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 52,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0003",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 34,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0004",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 99,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0005",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 73,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0006",
+    "model": "BYD Atto 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 77,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0007",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 67,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0008",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 88,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0009",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 59,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0010",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 61,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0011",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 81,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0012",
+    "model": "BMW iX",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 47,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0013",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 58,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0014",
+    "model": "BYD Atto 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 26,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0015",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 71,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0016",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 83,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0017",
+    "model": "BMW i7",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 95,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0018",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 29,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0019",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 91,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0020",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 62,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0021",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 89,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0022",
+    "model": "Hyundai IONIQ 5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 52,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0023",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 34,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0024",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 43,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0025",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 19,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0026",
+    "model": "BYD Atto 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 67,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0027",
+    "model": "Mercedes EQS",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 47,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0028",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 47,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0029",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 90,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0030",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 27,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0031",
+    "model": "BYD Atto 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 28,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0032",
+    "model": "Mercedes EQB",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 64,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0033",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 97,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0034",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 49,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0035",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 73,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0036",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 41,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0037",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 82,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0038",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 90,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0039",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0040",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 59,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0041",
+    "model": "Mercedes EQS",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 23,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0042",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 73,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0043",
+    "model": "BYD Seal",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 95,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0044",
+    "model": "Kia EV6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 29,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0045",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 58,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0046",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 57,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-8Arr-0047",
+    "model": "Kia EV6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 73,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0048",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 34,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0049",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 20,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-8Arr-0050",
+    "model": "Kia EV6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 29,
+    "is_available": true
+  },
+
+  {
+    "car_id": "LYN-9Arr-0001",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 23,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0002",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 55,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0003",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 87,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0004",
+    "model": "Volvo C40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 91,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0005",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 21,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0006",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 94,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0007",
+    "model": "Peugeot e-208",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 42,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0008",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 96,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0009",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 48,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0010",
+    "model": "Tesla Model Y",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 78,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0011",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 34,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0012",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 58,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0013",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 87,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0014",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 78,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0015",
+    "model": "BMW i7",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 36,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0016",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 47,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0017",
+    "model": "Fiat 500e",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 98,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0018",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 73,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0019",
+    "model": "Skoda Enyaq",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 73,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0020",
+    "model": "Volkswagen ID.4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 91,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0021",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 30,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0022",
+    "model": "Audi e-tron GT",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 96,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0023",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 46,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0024",
+    "model": "BMW i7",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 89,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0025",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 53,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0026",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 28,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0027",
+    "model": "Nissan Ariya",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 95,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0028",
+    "model": "Volkswagen ID.3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 100,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0029",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 77,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0030",
+    "model": "Tesla Model X",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 44,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0031",
+    "model": "Mercedes EQB",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 31,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0032",
+    "model": "Kia EV9",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 21,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0033",
+    "model": "Fiat 500e",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 54,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0034",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 62,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0035",
+    "model": "Peugeot e-2008",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 22,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0036",
+    "model": "BMW i4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 24,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0037",
+    "model": "Mercedes EQC",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 31,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0038",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 56,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0039",
+    "model": "Mercedes EQA",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 51,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0040",
+    "model": "Audi Q4 e-tron",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 51,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0041",
+    "model": "Tesla Model 3",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 26,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0042",
+    "model": "Peugeot e-308",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 63,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0043",
+    "model": "Volkswagen ID.5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 79,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0044",
+    "model": "Fiat 500e",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 80,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0045",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 35,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0046",
+    "model": "MG5",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 64,
+    "is_available": true
+  },
+  {
+    "car_id": "LYN-9Arr-0047",
+    "model": "Hyundai IONIQ 6",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 29,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0048",
+    "model": "Volvo XC40 Recharge",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 17,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0049",
+    "model": "MG4",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 43,
+    "is_available": false
+  },
+  {
+    "car_id": "LYN-9Arr-0050",
+    "model": "Renault Megane E-Tech",
+    "location": {
+      "longitude": 4.835659,
+      "latitude": 45.764043
+    },
+    "battery_level": 39,
+    "is_available": false
+  }
+]
