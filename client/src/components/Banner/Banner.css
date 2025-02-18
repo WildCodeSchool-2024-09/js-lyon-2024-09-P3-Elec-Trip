@@ -38,7 +38,8 @@
   width: 58px;
   position: absolute;
   cursor: pointer;
-  top: -5px;
+  margin-top: -5px;
+  -webkit-margin-before: -8px;
   border: 2px solid white;
   background-color: transparent;
   transition: .4s;
@@ -89,9 +90,7 @@ input:checked + .sliderRound:before {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.ButtonReserv:hover {
-  background-color: rgb(249, 250, 251);
-}
+
 .ButtonReserv:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;

@@ -8,9 +8,9 @@ import { AuthProvider } from "./contexts/AuthContext";
 /* ************************************************************************* */
 
 // Import the main app component
-import App from "./App";
+
 import Account from "./pages/Account";
-import AnyQuestions from "./pages/AnyQuestions";
+import CGU from "./pages/CGU";
 import CarMap from "./pages/CarMap";
 import ChargerMap from "./pages/ChargerMap";
 import HomePage from "./pages/HomePage";
@@ -28,11 +28,7 @@ import HomePage from "./pages/HomePage";
 const router = createBrowserRouter([
   {
     path: "/", // The root path
-    element: <HomePage />, // Renders the App component for the home page
-  },
-  {
-    path: "/app", //
-    element: <App />,
+    element: <HomePage />, // Renders the HomePage component for the homepage
   },
   {
     path: "/trouver_une_borne",
@@ -47,8 +43,8 @@ const router = createBrowserRouter([
     element: <Account />,
   },
   {
-    path: "/questions",
-    element: <AnyQuestions />,
+    path: "/Conditions_Generales_d'Utilisation",
+    element: <CGU />,
   },
   // Try adding a new route! For example, "/about" with an About component
 ]);
@@ -64,7 +60,7 @@ if (rootElement == null) {
 // Render the app inside the root element
 createRoot(rootElement).render(
   <StrictMode>
-    {/* Avec AuthProvider je fournis le context à l'ensemble de ce qui est encapsulé */}
+    {/* AuthProvider fournit le context à l'ensemble de ce qui est encapsulé */}
     <AuthProvider>
       <RouterProvider router={router} />
       <ToastContainer

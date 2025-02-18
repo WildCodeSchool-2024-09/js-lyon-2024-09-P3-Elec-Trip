@@ -1,4 +1,5 @@
-/*---- Mobile ----*/ .wrapNav {
+/*---- Mobile ----*/
+.wrapNav {
   border-bottom: 1px solid #b5b5b5;
 }
 .nav {
@@ -11,6 +12,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  transition: .4s;
+}
+
+.user-profile-image {
+  cursor: pointer;
 }
 .nav ul {
   display: flex;
@@ -72,16 +78,16 @@
     display: block;
     cursor: pointer;
   }
-  .linkBurger {
+  .linkBurgerNav {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    color: #004b47;
+    color: #b5b5b5;
     text-decoration: none;
     cursor: pointer;
   }
   .linkButton button {
-    color: #004b47;
-    border: 2px solid #004b47;
+    color: #b5b5b5;
+    border: 2px solid #b5b5b5;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
   }
