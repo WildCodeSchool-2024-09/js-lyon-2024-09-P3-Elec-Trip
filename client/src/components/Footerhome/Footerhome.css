@@ -1,11 +1,44 @@
 /*---- Mobile ----*/
 .partnersHome {
   background-color: #2d3333;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
-.wrapPartnersHome Img {
-  /* height: 3.5rem; svp, arretez avec les 'rem' */
-  height: 35px;
-  object-fit: covert;
+
+/* Ajuster les masques de fondu */
+.partnersHome::before,
+.partnersHome::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 35%; /* Augmenter la largeur du masque */
+  height: 100%;
+  z-index: 2;
+}
+
+.partnersHome::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #2d3333 20% /* Plus opaque au début */,
+    rgba(45, 51, 51, 0.8) 40%,
+    transparent 100%
+  );
+}
+
+.partnersHome::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    #2d3333 20% /* Plus opaque à la fin */,
+    rgba(45, 51, 51, 0.8) 40%,
+    transparent 100%
+  );
+}
+
+.partnersHome Img {
+  height: 3.5rem;
 }
 .footerHome {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -23,45 +56,36 @@
 }
 .wrapPartnersHome {
   padding: 50px 40px;
-  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
+
+.scroll-container {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  width: fit-content;
+  will-change: transform;
+  position: relative;
+  left: 0;
+}
+
+.logos {
+  display: flex;
+  gap: 100px;
+  padding-right: 100px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 .wrapFooterHome {
   padding: 30px 40px;
   justify-content: space-between;
-}
-.wrapFooterHome p,
-.linkCGU {
-  font-size: 0.9rem;
-}
-.linkCGU {
-  text-decoration: none;
-  color: #ffffff7a;
-}
-
-/*---- Mobile intermédiaire ----*/
-@media screen and (min-width: 390px) {
-  .wrapPartnersHome Img {
-    height: 45px;
-  }
-}
-
-/*---- Tablet Vertical ----*/
-@media screen and (min-width: 500px) {
-  .wrapPartnersHome Img {
-    height: 60px;
-  }
-}
-
-/*---- Tablet Horizontal ----*/
-@media screen and (min-width: 1024px) {
-  .wrapPartnersHome Img {
-    height: 70px;
-  }
-}
-
-/*---- Desktop ----*/
-@media screen and (min-width: 1100px) {
-  .wrapPartnersHome Img {
-    height: 80px;
-  }
 }
