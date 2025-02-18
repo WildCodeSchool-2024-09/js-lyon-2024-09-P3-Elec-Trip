@@ -102,7 +102,11 @@ function NavHome() {
       ) : (
         <ul>
           <Link to="/">
-            <img src={IconHome} alt="Icone page Accueil" />
+            <img
+              src={IconHome}
+              alt="Icone page Accueil"
+              className="nav-home-icon"
+            />
           </Link>
           <Link to="/trouver_une_borne" className="link">
             Trouver une borne

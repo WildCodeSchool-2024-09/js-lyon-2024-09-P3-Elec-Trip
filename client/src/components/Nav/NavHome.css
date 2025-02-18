@@ -120,3 +120,11 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
   }
 }
+
+.nav-home-icon {
+  transition: transform 0.3s ease;
+}
+
+.nav-home-icon:hover {
+  transform: scale(1.15);
+}
