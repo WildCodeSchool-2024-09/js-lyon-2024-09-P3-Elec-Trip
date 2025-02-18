@@ -95,7 +95,11 @@ function Nav() {
         ) : (
           <ul>
             <Link to="/">
-              <img src={IconHomeMap} alt="Icone page Accueil" />
+              <img
+                src={IconHomeMap}
+                alt="Icone page Accueil"
+                className="nav-map-icon"
+              />
             </Link>
             <Link to="/trouver_une_borne" className="linkMapNav">
               Trouver une borne

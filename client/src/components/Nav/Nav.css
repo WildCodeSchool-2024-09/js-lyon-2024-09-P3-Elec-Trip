@@ -17,7 +17,13 @@
 
 .user-profile-image {
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
+
+.user-profile-image:hover {
+  transform: scale(1.15);
+}
+
 .nav ul {
   display: flex;
   gap: 2vw;
@@ -29,6 +35,20 @@
   color: #b5b5b5;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.linkMapNav:hover {
+  transform: scale(1.1);
+}
+.linkMapNav:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: #b5b5b5;
 }
 .linkButtonMapNav button {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -36,11 +56,27 @@
   font-weight: 600;
   color: #b5b5b5;
   text-decoration: none;
-  border: 2px solid #b5b5b5;
+  border: 3px solid #b5b5b5;
   border-radius: 30px;
   padding: 8px 45px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.linkButtonMapNav {
+  text-decoration: none;
+}
+.linkButtonMapNav button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 3px 3px rgba(181, 181, 181, 0.1) inset;
+  background-color: transparent;
+}
+.linkButtonMapNav button:active {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2) inset;
+  background-color: transparent;
 }
 .imgnav {
   width: 120px;
@@ -105,4 +141,12 @@
   .nav {
     height: 100px;
   }
+}
+
+.nav-map-icon {
+  transition: transform 0.3s ease;
+}
+
+.nav-map-icon:hover {
+  transform: scale(1.15);
 }
