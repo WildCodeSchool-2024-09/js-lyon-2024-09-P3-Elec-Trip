@@ -36,6 +36,15 @@ const LeafletIconsRegister = {
     shadowUrl: "https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png",
     shadowSize: [25, 25],
   }),
+
+  carLocation: new L.Icon({
+    iconUrl: "/marker_voiture.png",
+    iconSize: [39, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowUrl: "https://unpkg.com/leaflet@1.9.3/dist/images/marker-shadow.png",
+    shadowSize: [25, 25],
+  }),
 };
 
 export default LeafletIconsRegister;

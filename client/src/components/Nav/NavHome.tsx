@@ -60,13 +60,13 @@ function NavHome() {
           {isMenuOpen && (
             <div className="menuBubble">
               <ul>
-                <Link to="/" className="linkBurger">
+                <Link to="/" className="linkBurgerHome">
                   Accueil
                 </Link>
-                <Link to="/trouver_une_borne" className="linkBurger">
+                <Link to="/trouver_une_borne" className="linkBurgerHome">
                   Trouver une borne
                 </Link>
-                <Link to="/trouver_une_voiture" className="linkBurger">
+                <Link to="/trouver_une_voiture" className="linkBurgerHome">
                   Trouver une voiture
                 </Link>
 

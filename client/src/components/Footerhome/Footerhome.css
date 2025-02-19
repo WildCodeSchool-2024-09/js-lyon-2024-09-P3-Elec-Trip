@@ -10,7 +10,11 @@
   position: relative;
   width: 100%;
 }
-
+.linkCGU {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #ffffff7a;
+}
 /* Ajuster les masques de fondu */
 .partnersHome::before,
 .partnersHome::after {
@@ -50,10 +54,6 @@
   font-size: 12px;
   color: #ffffff7a;
   background-color: #222627;
-}
-.footerHome img {
-  height: 10px;
-  margin: 2px 5px 0 5px;
 }
 .wrapFooterHome,
 .wrapPartnersHome {

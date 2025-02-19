@@ -1,9 +1,11 @@
 import Banner from "../components/Banner/Banner";
-import Footer from "../components/Footer/Footer";
-import DisplayMap from "../components/Map/DisplayMap";
+import FooterCarMap from "../components/Footer/FooterCarMap";
+import DisplayCar from "../components/Map/DisplayCar";
 import Nav from "../components/Nav/Nav";
-import Selection from "../components/Selection/Selection";
+// import Selection from "../components/Selection/Selection";
+import { CoordinatesProvider } from "../contexts/EVStationContext.tsx";
 
+import "./CarMap.css";
 import "../App.css";
 
 function CarMap() {
@@ -12,12 +14,20 @@ function CarMap() {
       <nav>
         <Nav />
       </nav>
+      <main className="appContainer">
+        <CoordinatesProvider>
+          <section className="mapContainer">
+            <DisplayCar />
+          </section>
 
-      <main>
-        <DisplayMap />
-        <Banner />
-        <Selection />
-        <Footer />
+          <section className="mapOptions">
+            <div className="WrappBannerAndSelection">
+              <Banner />
+              {/* <Selection /> */}
+            </div>
+            <FooterCarMap />
+          </section>
+        </CoordinatesProvider>
       </main>
     </>
   );

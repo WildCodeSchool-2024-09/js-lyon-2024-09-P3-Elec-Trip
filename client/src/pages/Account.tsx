@@ -49,7 +49,7 @@ function Account() {
       );
 
       if (response.status === 201) {
-        toast.info("Votre compte à bien été crée ! 😊");
+        toast.info("Votre compte à bien été crée ! 🚀");
       } else {
         toast.error("Une erreur s'est produite, veuillez réessayer");
       }
