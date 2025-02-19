@@ -11,7 +11,7 @@ type Bornes = {
 
 class BookABornesRepository {
   // this function parse if a borne is available and return its id to get reserved
-  async returnBorneID(array: Rows) {
+  async returnBorneID(array: Rows): Promise<number> {
     for (let i = 0; i < array.length; i++) {
       if (array[i].available === 0) {
         return array[i].id;
