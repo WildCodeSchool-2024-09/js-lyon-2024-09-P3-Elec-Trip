@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Nav from "..//components/Nav/Nav";
 import Footer from "../components/Footerhome/Footerhome";
 
@@ -5,6 +6,10 @@ import "../App.css";
 import "./CGU.css";
 
 function CGU() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Nav />
@@ -43,9 +48,9 @@ function CGU() {
           <h3>Obligations de l'Utilisateur</h3>
           <ul>
             L'Utilisateur s'engage à :
+            <li>Utiliser le Service conformément à sa destination </li>
             <li>
-              Utiliser le Service conformément à sa destination Respecter les
-              conditions particulières des fournisseurs de charge
+              Respecter les conditions particulières des fournisseurs de charge
             </li>
             <li>
               Utiliser uniquement des équipements compatibles et homologués

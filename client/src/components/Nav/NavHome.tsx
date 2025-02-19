@@ -94,7 +94,11 @@ function NavHome() {
       ) : (
         <ul>
           <Link to="/">
-            <img src={IconHome} alt="Icone page Accueil" />
+            <img
+              src={IconHome}
+              alt="Icone page Accueil"
+              className="nav-home-icon"
+            />
           </Link>
           <Link to="/trouver_une_borne" className="link">
             Trouver une borne
@@ -117,7 +121,9 @@ function NavHome() {
             </div>
           ) : (
             <Link to="/mon_compte" className="linkButton">
-              <button type="button">S'authentifier</button>
+              <button type="button" className="btn neumorphic">
+                S'authentifier
+              </button>
             </Link>
           )}
         </ul>
