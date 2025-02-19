@@ -1,8 +1,8 @@
 import Banner from "../components/Banner/Banner";
-import Footer from "../components/Footer/Footer";
-import DisplayMap from "../components/Map/DisplayMap";
+import FooterCarMap from "../components/Footer/FooterCarMap";
+import DisplayCar from "../components/Map/DisplayCar";
 import Nav from "../components/Nav/Nav";
-import Selection from "../components/Selection/Selection";
+// import Selection from "../components/Selection/Selection";
 import { CoordinatesProvider } from "../contexts/EVStationContext.tsx";
 
 import "./CarMap.css";
@@ -17,15 +17,15 @@ function CarMap() {
       <main className="appContainer">
         <CoordinatesProvider>
           <section className="mapContainer">
-            <DisplayMap />
+            <DisplayCar />
           </section>
 
           <section className="mapOptions">
             <div className="WrappBannerAndSelection">
               <Banner />
-              <Selection />
+              {/* <Selection /> */}
             </div>
-            <Footer />
+            <FooterCarMap />
           </section>
         </CoordinatesProvider>
       </main>
