@@ -114,14 +114,14 @@
     display: block;
     cursor: pointer;
   }
-  .linkBurgerNav {
+  .linkBurgerMapNav {
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: #b5b5b5;
     text-decoration: none;
     cursor: pointer;
   }
-  .linkButton button {
+  .linkButtonMapNav button {
     color: #b5b5b5;
     border: 2px solid #b5b5b5;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0);
