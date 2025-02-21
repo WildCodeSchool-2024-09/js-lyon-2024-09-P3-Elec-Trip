@@ -1,0 +1,168 @@
+/*---- Mobile ----*/
+.accountPage {
+  margin: 0 auto;
+  background-image: url(../images/bg_login.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.accountContenair {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+  padding-top: 7%;
+}
+.accountInfos {
+  width: 70%;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.accountInfos h1 {
+  font-family: "Nexa", Arial, Helvetica, sans-serif;
+  font-size: 1.72rem;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  margin-bottom: 20px;
+}
+.accountButton {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.accountButton button {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.accountButton button:hover {
+  transform: scale(1.1);
+}
+
+.accountButton button:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.accountForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accountForm input[type="text"],
+.accountForm input[type="email"],
+.accountForm input[type="password"] {
+  width: 300px;
+  margin-bottom: 20px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1em;
+  padding: 16px 24px;
+  border: 3px solid #fff;
+  border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+.accountForm Input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.accountForm Input:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.25);
+}
+.accountForm input[type="submit"] {
+  width: 200px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #004b47;
+  text-align: center;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 10px 35px;
+  border: 3px solid #fff;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  transition: 0.2s;
+}
+
+.accountForm input[type="submit"]:hover {
+  transform: scale(0.975);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 3px 3px rgba(255, 255, 255, 0.1)
+    inset;
+}
+
+.accountForm input[type="submit"]:active {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 5px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+/*---- Tablet ----*/
+@media screen and (min-width: 600px) {
+  .accountContenair {
+    max-width: 100%;
+  }
+  .accountInfos {
+    width: 425px;
+    gap: 20px;
+  }
+  .accountInfos h1 {
+    font-size: 2.4rem;
+  }
+  .accountForm input[type="text"],
+  .accountForm input[type="email"],
+  .accountForm input[type="password"] {
+    width: 350px;
+    margin-bottom: 20px;
+  }
+}
+
+/*---- Desktop ----*/
+@media screen and (min-width: 1100px) {
+  .accountContenair {
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+  }
+  .accountInfos {
+    width: 500px;
+    gap: 20px;
+  }
+  .accountInfos h1 {
+    font-size: 2.875rem;
+  }
+  .accountForm input[type="text"],
+  .accountForm input[type="email"],
+  .accountForm input[type="password"] {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}

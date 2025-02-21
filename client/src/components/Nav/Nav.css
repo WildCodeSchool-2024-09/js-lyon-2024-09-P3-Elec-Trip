@@ -1,0 +1,145 @@
+/*---- Mobile ----*/
+.wrapNav {
+  border-bottom: 1px solid #b5b5b5;
+}
+.nav {
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: .4s;
+}
+
+.user-profile-image {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.user-profile-image:hover {
+  transform: scale(1.15);
+}
+
+.nav ul {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.linkMapNav {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #b5b5b5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.linkMapNav:hover {
+  transform: scale(1.1);
+}
+.linkMapNav:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1px;
+  background-color: #b5b5b5;
+}
+.linkButtonMapNav button {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #b5b5b5;
+  text-decoration: none;
+  border: 3px solid #b5b5b5;
+  border-radius: 30px;
+  padding: 8px 45px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.linkButtonMapNav {
+  text-decoration: none;
+}
+.linkButtonMapNav button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 3px 3px rgba(181, 181, 181, 0.1) inset;
+  background-color: transparent;
+}
+.linkButtonMapNav button:active {
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2) inset;
+  background-color: transparent;
+}
+.imgnav {
+  width: 120px;
+}
+.burgerMenu {
+  width: 24px;
+}
+.menuBubble {
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(46, 51, 51, 0.75);
+  padding: 20px;
+  z-index: 10;
+}
+.menuBubble ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.menuBubble .link,
+.menuBubble .linkButton {
+  color: white;
+  text-decoration: none;
+}
+
+/*---- Burger Menu ----*/
+@media (max-width: 860px) {
+  .nav > ul {
+    display: none;
+  }
+  .burgerMenu {
+    display: block;
+  }
+  .linkBurger {
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #b5b5b5;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+/*---- Tablet Vertical ----*/
+@media screen and (min-width: 860px) {
+  .nav {
+    height: 60px;
+  }
+}
+
+/*---- Tablet Horizontal ----*/
+@media screen and (min-width: 861px) {
+  .nav {
+    height: 100px;
+  }
+}
+
+.nav-map-icon {
+  transition: transform 0.3s ease;
+}
+
+.nav-map-icon:hover {
+  transform: scale(1.15);
+}
